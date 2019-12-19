@@ -30,6 +30,7 @@ namespace TYPO3Extension\Imagecycle\Controller;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Utility\VersionNumberUtility;
+use TYPO3\CMS\Frontend\Resource\FilePathSanitizer;
 
 /**
  * This class implements a all needed functions to add Javascripts and Stylesheets to a page
@@ -170,7 +171,10 @@ class PageRenderer
 	 * @return string
 	 */
 	public function getPath($path = '') {
-		return $this->getTypoScriptFrontendController()->tmpl->getFileName($path);
+        if ($path !== '')
+            return GeneralUtility::makeInstance(FilePathSanitizer::class)->sanitize($path);
+
+        return $path;
 	}
 
 	/**

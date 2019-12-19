@@ -24,6 +24,9 @@
 
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Frontend\Resource\FilePathSanitizer;
+use TYPO3\CMS\Core\Service\MarkerBasedTemplateService;
+use TYPO3Extension\Imagecycle\Controller\PageRenderer;
 
 /**
  * [CLASS/FUNCTION INDEX of SCRIPT]
@@ -77,7 +80,8 @@ class tx_imagecycle_pi5 extends tx_imagecycle_pi1
 		$this->setContentKey('imagecycle-slice');
 
 		// set the system language
-		$this->sys_language_uid = $GLOBALS['TSFE']->sys_language_content;
+        $languageAspect = GeneralUtility::makeInstance(Context::class)->getAspect('language');
+        $this->sysLanguageUid = $languageAspect->getId();
 
 		// set the uid of the tt_content
 		$this->uid = $this->cObj->data['_LOCALIZED_UID'] ? $this->cObj->data['_LOCALIZED_UID'] : $this->cObj->data['uid'];
@@ -230,8 +234,10 @@ class tx_imagecycle_pi5 extends tx_imagecycle_pi1
 				}
 			}
 			if ($pageID) {
-				if ($this->sys_language_uid) {
-				$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery('tx_imagecycle_images, tx_imagecycle_hrefs, tx_imagecycle_captions, tx_imagecycle_effect, tx_imagecycle_mode', 'pages_language_overlay', 'pid='.intval($pageID).' AND sys_language_uid='.$this->sys_language_uid, '', '', 1);
+                if ($this->sysLanguageUid) {
+                    // @extensionScannerIgnoreLine
+                    $res = $GLOBALS['TYPO3_DB']->exec_SELECTquery('tx_imagecycle_images, tx_imagecycle_hrefs, tx_imagecycle_captions, tx_imagecycle_effect, tx_imagecycle_mode', 'pages_language_overlay', 'pid='.intval($pageID).' AND sys_language_uid='.$this->sysLanguageUid, '', '', 1);
+                    // @extensionScannerIgnoreLine
 					$row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res);
 					if (trim($used_page['tx_imagecycle_effect'])) {
 						$this->conf['type'] = $row['tx_imagecycle_effect'];
@@ -249,7 +255,7 @@ class tx_imagecycle_pi5 extends tx_imagecycle_pi1
 						$this->hrefs    = GeneralUtility::trimExplode(chr(10), $used_page['tx_imagecycle_hrefs']);
 						$this->captions = GeneralUtility::trimExplode(chr(10), $used_page['tx_imagecycle_captions']);
 						// Language overlay
-						if ($this->sys_language_uid) {
+                        if ($this->sysLanguageUid) {
 							if (trim($row['tx_imagecycle_images']) != '') {
 								$this->images   = GeneralUtility::trimExplode(',',     $row['tx_imagecycle_images']);
 								$this->hrefs    = GeneralUtility::trimExplode(chr(10), $row['tx_imagecycle_hrefs']);
@@ -298,7 +304,8 @@ class tx_imagecycle_pi5 extends tx_imagecycle_pi1
 	 */
 	public function parseTemplate($data=array(), $dir='', $onlyJS=false)
 	{
-		$this->pagerenderer = GeneralUtility::makeInstance(\TYPO3Extension\Imagecycle\Controller\PageRenderer);
+        $this->templateService = GeneralUtility::makeInstance(MarkerBasedTemplateService::class);
+        $this->pagerenderer = GeneralUtility::makeInstance(PageRenderer::class);
 		$this->pagerenderer->setConf($this->conf);
 
 		// define the directory of images
@@ -395,7 +402,7 @@ class tx_imagecycle_pi5 extends tx_imagecycle_pi1
 			$options['orientation'] = 'orientation: \'' . $this->conf['sliceOrientation'] . '\'';
 		}
 		if ($this->conf['slicePerspective'] > 0) {
-			$options['perspective'] = 'perspective: ' . $this->conf['slicePerspective']' . '\'';
+            $options['perspective'] = 'perspective: ' . $this->conf['slicePerspective'];
 		}
 		if ($this->conf['sliceSlicesCount'] > 0) {
 			$options['cuboidsCount'] = 'cuboidsCount: ' . $this->conf['sliceSlicesCount'];
@@ -444,12 +451,16 @@ class tx_imagecycle_pi5 extends tx_imagecycle_pi1
 		$this->pagerenderer->addJsFile($this->conf['jQuerySlice']);
 
 		// The template for JS
-		if (! $this->templateFileJS = $this->cObj->fileResource($this->conf['templateFileJS'])) {
-			$this->templateFileJS = $this->cObj->fileResource('EXT:imagecycle/res/tx_imagecycle.js');
+        $template = GeneralUtility::makeInstance(FilePathSanitizer::class)->sanitize($this->conf['templateFileJS']);
+        if ($template !== null && file_exists($template)) {
+            $this->templateFileJS = file_get_contents($template);
 		}
+        else
+            $this->templateFileJS = file_get_contents('EXT:imagecycle/res/tx_imagecycle.js');
 
 		// get the Template of the Javascript
-		if (! $templateCode = trim($this->cObj->getSubpart($this->templateFileJS, '###TEMPLATE_SLICEBOX_JS###'))) {
+        // @extensionScannerIgnoreLine
+        if (! $templateCode = trim($this->templateService->getSubpart($this->templateFileJS, '###TEMPLATE_SLICEBOX_JS###'))) {
 			$templateCode = 'alert(\'Template TEMPLATE_SLICEBOX_JS is missing\')';
 		}
 
@@ -459,7 +470,8 @@ class tx_imagecycle_pi5 extends tx_imagecycle_pi1
 		$markerArray['OPTIONS'] = implode(',' . PHP_EOL . '				', $options);
 
 		// set the markers
-		$templateCode = $this->cObj->substituteMarkerArray($templateCode, $markerArray, '###|###', 0);
+        // @extensionScannerIgnoreLine
+        $templateCode = $this->templateService->substituteMarkerArray($templateCode, $markerArray, '###|###', 0);
 
 		$this->pagerenderer->addJS($jQueryNoConflict . $templateCode);
 
