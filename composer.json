@@ -24,7 +24,7 @@
     "GPL-2.0-or-later"
   ],
   "require": {
-    "typo3/cms-core": ">=7.6.0,<9.0"
+    "typo3/cms-core": "^7.6 || ^8,7"
   },
   "autoload": {
     "psr-4": {
@@ -32,8 +32,7 @@
     }
   },
   "replace": {
-    "typo3-extension/imagecycle": "self.version",
-    "typo3-ter/imagecycle": "self.version"
+    "typo3-extension/imagecycle": "self.version"
   },
   "extra": {
     "typo3/cms": {
