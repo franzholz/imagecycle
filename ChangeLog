@@ -1,4 +1,5 @@
-
+2021-09-28  Franz Holzinger  <franz@ttproducts.de>
+    * fix issue #3: Add the missing leading slash in the namespace declaration
 
 2020-02-20  Franz Holzinger  <franz@ttproducts.de>
     * fix issue #2: errors in makeInstance with missing class operator

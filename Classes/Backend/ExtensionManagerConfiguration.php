@@ -48,7 +48,7 @@ class ExtensionManagerConfiguration
 	*/
 	public function getThemesNivo(&$params, &$tsObj)
 	{
-		$itemsProcFunc = GeneralUtility::makeInstance(TYPO3Extension\Imagecycle\Backend\ItemsProcFunc::class);
+		$itemsProcFunc = GeneralUtility::makeInstance(\TYPO3Extension\Imagecycle\Backend\ItemsProcFunc::class);
 		$config = $itemsProcFunc->getThemesNivo(array('items'=> array()), array());
 		$items = $config['items'];
 
