@@ -1,5 +1,5 @@
 <?php
-$EM_CONF[$_EXTKEY] = array(
+$EM_CONF[$_EXTKEY] = [
 	'title' => 'Image Cycle',
 	'description' => 'Insert a slideshow into your page or template. Manage the images, captions and hrefs recursively in the pagetree and show it in a jQuery-Cycle, Coin-Slider, Nivo-Slider or Cross-Slider.',
 	'category' => 'plugin',
@@ -10,21 +10,22 @@ $EM_CONF[$_EXTKEY] = array(
 	'author' => 'Franz Holzinger, Juergen Furrer',
 	'author_email' => 'franz@ttproducts.de',
 	'author_company' => '',
-	'constraints' => array(
-		'depends' => array(
+	'constraints' => [
+		'depends' => [
 			'cms' => '',
 			'php' => '5.5.0-0.0.0',
 			'typo3' => '7.6.0-8.7.99',
-		),
-		'conflicts' => array(
-		),
-		'suggests' => array(
+		],
+		'conflicts' => [
+		],
+		'suggests' => [
             'lib_jquery' => '2.1.0-0.0.0',
-		),
-	),
-	'autoload' => array(
-		'psr-4' => array(
+            'typo3db_legacy' => '1.0.0-1.1.99',
+		],
+	],
+	'autoload' => [
+		'psr-4' => [
 			'TYPO3Extension\\Imagecycle\\' => 'Classes',
-		),
-	),
-);
+		],
+	],
+];
