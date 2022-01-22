@@ -24,11 +24,12 @@
     "GPL-2.0-or-later"
   ],
   "require": {
+    "php": "^5.5 || ^7.2",
     "typo3/cms-core": "^7.6 || ^8.7"
   },
   "suggest": {
     "friendsoftypo3/typo3db-legacy": "^1",
-    "sonority/lib-jquery": "^2.1, ^3.0,"
+    "sonority/lib-jquery": "^2.1 || ^3.0"
   },
   "autoload": {
     "psr-4": {
@@ -36,7 +37,7 @@
     }
   },
   "replace": {
-    "typo3-extension/imagecycle": "self.version"
+    "typo3-ter/imagecycle": "self.version"
   },
   "extra": {
     "typo3/cms": {

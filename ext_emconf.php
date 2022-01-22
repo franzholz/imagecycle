@@ -3,7 +3,7 @@ $EM_CONF[$_EXTKEY] = [
 	'title' => 'Image Cycle',
 	'description' => 'Insert a slideshow into your page or template. Manage the images, captions and hrefs recursively in the pagetree and show it in a jQuery-Cycle, Coin-Slider, Nivo-Slider or Cross-Slider.',
 	'category' => 'plugin',
-	'version' => '3.3.0',
+	'version' => '3.3.1',
 	'state' => 'stable',
 	'uploadfolder' => 0,
 	'clearcacheonload' => 1,
@@ -13,7 +13,7 @@ $EM_CONF[$_EXTKEY] = [
 	'constraints' => [
 		'depends' => [
 			'cms' => '',
-			'php' => '5.5.0-0.0.0',
+			'php' => '5.5.0-7.4.99',
 			'typo3' => '7.6.0-8.7.99',
 		],
 		'conflicts' => [

@@ -1,3 +1,6 @@
+2022-01-22  Franz Holzinger  <franz@ttproducts.de>
+    * fix composer.json
+
 2021-09-28  Franz Holzinger  <franz@ttproducts.de>
     * fix issue #3: Add the missing leading slash in the namespace declaration
 
