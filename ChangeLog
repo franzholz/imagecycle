@@ -1,3 +1,7 @@
+2022-09-10  Franz Holzinger  <franz@ttproducts.de>
+    * remove support for TYPO3 7.6 and PHP 5.5
+    * compatibility TYPO3 8.7: deprecation no 77934: The field `select_key` of the table `tt_content` is not used in the core and has been removed.
+
 2022-01-22  Franz Holzinger  <franz@ttproducts.de>
     * fix composer.json
 

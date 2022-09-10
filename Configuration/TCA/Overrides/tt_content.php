@@ -123,17 +123,17 @@ $listType = 'imagecycle_pi5';
     'FILE:EXT:' . IMAGECYLCE_EXT . '/pi5/flexform_ds.xml'
 );
 
-$GLOBALS['TCA'][$table]['types']['list']['subtypes_excludelist']['imagecycle_pi1'] = 'layout,select_key,pages';
+$GLOBALS['TCA'][$table]['types']['list']['subtypes_excludelist']['imagecycle_pi1'] = 'layout,pages';
 $GLOBALS['TCA'][$table]['types']['list']['subtypes_addlist']['imagecycle_pi1']     = 'pi_flexform,image_zoom';
 
-$GLOBALS['TCA'][$table]['types']['list']['subtypes_excludelist']['imagecycle_pi2'] = 'layout,select_key,pages';
+$GLOBALS['TCA'][$table]['types']['list']['subtypes_excludelist']['imagecycle_pi2'] = 'layout,pages';
 $GLOBALS['TCA'][$table]['types']['list']['subtypes_addlist']['imagecycle_pi2']     = 'pi_flexform,image_zoom';
 
-$GLOBALS['TCA'][$table]['types']['list']['subtypes_excludelist']['imagecycle_pi3'] = 'layout,select_key,pages';
+$GLOBALS['TCA'][$table]['types']['list']['subtypes_excludelist']['imagecycle_pi3'] = 'layout,pages';
 $GLOBALS['TCA'][$table]['types']['list']['subtypes_addlist']['imagecycle_pi3']     = 'pi_flexform,image_zoom';
 
-$GLOBALS['TCA'][$table]['types']['list']['subtypes_excludelist']['imagecycle_pi4'] = 'layout,select_key,pages';
+$GLOBALS['TCA'][$table]['types']['list']['subtypes_excludelist']['imagecycle_pi4'] = 'layout,pages';
 $GLOBALS['TCA'][$table]['types']['list']['subtypes_addlist']['imagecycle_pi4']     = 'pi_flexform,image_zoom';
 
-$GLOBALS['TCA'][$table]['types']['list']['subtypes_excludelist']['imagecycle_pi5'] = 'layout,select_key,pages';
+$GLOBALS['TCA'][$table]['types']['list']['subtypes_excludelist']['imagecycle_pi5'] = 'layout,pages';
 $GLOBALS['TCA'][$table]['types']['list']['subtypes_addlist']['imagecycle_pi5']     = 'pi_flexform,image_zoom';
