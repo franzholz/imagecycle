@@ -399,7 +399,7 @@ class tx_imagecycle_pi5 extends tx_imagecycle_pi1
 			$options['orientation'] = 'orientation: \'' . $this->conf['sliceOrientation'] . '\'';
 		}
 		if ($this->conf['slicePerspective'] > 0) {
-			$options['perspective'] = 'perspective: ' . $this->conf['slicePerspective']' . '\'';
+			$options['perspective'] = 'perspective: \'' . $this->conf['slicePerspective'] . '\'';
 		}
 		if ($this->conf['sliceSlicesCount'] > 0) {
 			$options['cuboidsCount'] = 'cuboidsCount: ' . $this->conf['sliceSlicesCount'];
