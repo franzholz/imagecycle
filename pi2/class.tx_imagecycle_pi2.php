@@ -405,7 +405,7 @@ class tx_imagecycle_pi2 extends tx_imagecycle_pi1
 		$options['height'] = 'height: \'' . $maxHeight . '\'';
 
 		$this->pagerenderer->addCSS('
-#c{$this->cObj->data['uid']} {
+#c{$this->cObj->data[\'uid\']} {
 	width: ' . $maxWidth . 'px;
 }');
 
