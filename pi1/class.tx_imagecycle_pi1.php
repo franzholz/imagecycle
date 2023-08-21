@@ -247,7 +247,7 @@ class tx_imagecycle_pi1 extends AbstractPlugin
 			}
 			if ($pageID) {
 				if ($this->sys_language_uid) {
-					$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery('tx_imagecycle_images, tx_imagecycle_hrefs, tx_imagecycle_captions, tx_imagecycle_effect, tx_imagecycle_mode', 'pages_language_overlay', 'pid='.intval($pageID).' AND sys_language_uid='.$this->sys_language_uid, '', '', 1);
+					$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery('tx_imagecycle_images, tx_imagecycle_hrefs, tx_imagecycle_captions, tx_imagecycle_effect, tx_imagecycle_mode', 'pid='.intval($pageID).' AND sys_language_uid='.$this->sys_language_uid, '', '', 1);
 					$row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res);
 					if (trim($used_page['tx_imagecycle_effect'])) {
 						$this->conf['type'] = $row['tx_imagecycle_effect'];

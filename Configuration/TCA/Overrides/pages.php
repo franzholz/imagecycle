@@ -32,7 +32,7 @@ $tempColumns['tx_imagecycle_images'] = array(
         'type' => 'group',
         'internal_type' => 'file',
         'allowed' => 'gif,png,jpeg,jpg',
-        'max_size' => $GLOBALS['TYPO3_CONF_VARS']['BE']['maxFileSize'],
+        'max_size' => $GLOBALS['TYPO3_CONF_VARS']['BE']['maxFileSize'] ?? 0,
         'uploadfolder' => 'uploads/tx_imagecycle',
         'show_thumbs' => 1,
         'size' => 6,
@@ -87,4 +87,3 @@ $tempColumns['tx_imagecycle_stoprecursion'] = array(
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns($table, $tempColumns);
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes($table, '--div--;LLL:EXT:imagecycle/locallang_db.xml:' . $table . '.tx_imagecycle_div, tx_imagecycle_mode;;;;3-3-3, tx_imagecycle_damimages, tx_imagecycle_damcategories, tx_imagecycle_images, tx_imagecycle_hrefs, tx_imagecycle_captions, tx_imagecycle_effect, tx_imagecycle_stoprecursion');
 
-$GLOBALS['TCA'][$table]['ctrl']['requestUpdate'] .= ($GLOBALS['TCA'][$table]['ctrl']['requestUpdate'] ? ',' : ''). 'tx_imagecycle_mode';
