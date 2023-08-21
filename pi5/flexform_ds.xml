@@ -6,14 +6,14 @@
 		<general>
 			<ROOT>
 				<TCEforms>
-					<sheetTitle>LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.sheet_general</sheetTitle>
+					<sheetTitle>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.sheet_general</sheetTitle>
 				</TCEforms>
 				<type>array</type>
 				<el>
 					<mode>
 						<TCEforms>
 							<onChange>reload</onChange>
-							<label>LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.mode</label>
+							<label>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.mode</label>
 							<config>
 								<type>select</type>
 								<size>1</size>
@@ -28,7 +28,7 @@
 					<images>
 						<TCEforms>
 							<displayCond>FIELD:mode:!IN:dam,dam_catedit,uploadRTE</displayCond>
-							<label>LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.images</label>
+							<label>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.images</label>
 							<config>
 								<type>group</type>
 								<internal_type>file</internal_type>
@@ -46,7 +46,7 @@
 					<hrefs>
 						<TCEforms>
 							<displayCond>FIELD:mode:!IN:dam,dam_catedit,uploadRTE</displayCond>
-							<label>LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.hrefs</label>
+							<label>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.hrefs</label>
 							<config>
 								<type>text</type>
 								<wrap>OFF</wrap>
@@ -58,7 +58,7 @@
 					<captions>
 						<TCEforms>
 							<displayCond>FIELD:mode:!IN:dam,dam_catedit,uploadRTE,uploadData</displayCond>
-							<label>LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.captions</label>
+							<label>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.captions</label>
 							<config>
 								<type>text</type>
 								<wrap>OFF</wrap>
@@ -70,7 +70,7 @@
 					<captionsData>
 						<TCEforms>
 							<displayCond>FIELD:mode:IN:uploadData</displayCond>
-							<label>LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.captionsData</label>
+							<label>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.captionsData</label>
 							<config>
 								<type>imagecycle-allowedGroup</type>
 								<internal_type>db</internal_type>
@@ -84,7 +84,7 @@
 
 					<imagesRTE>
 						<tx_templavoila>
-							<title>LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.uploadRTE</title>
+							<title>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.uploadRTE</title>
 						</tx_templavoila>
 						<type>array</type>
 						<section>1</section>
@@ -94,7 +94,7 @@
 								<el>
 									<image>
 										<TCEforms>
-											<label>LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.image</label>
+											<label>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.image</label>
 											<config>
 												<type>group</type>
 												<internal_type>file</internal_type>
@@ -111,7 +111,7 @@
 									</image>
 									<href>
 										<TCEforms>
-											<label>LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.href</label>
+											<label>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.href</label>
 											<config>
 												<type>input</type>
 												<size>15</size>
@@ -137,7 +137,7 @@
 									</href>
 									<caption>
 										<TCEforms>
-											<label>LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.caption</label>
+											<label>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.caption</label>
 											<config>
 												<type>text</type>
 												<cols>30</cols>
@@ -149,7 +149,7 @@
 									<hide>
 										<TCEforms>
 											<exclude>1</exclude>
-											<label>LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.hide</label>
+											<label>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.hide</label>
 											<config>
 												<type>imagecycle-selectOrCheckbox</type>
 												<checked>0</checked>
@@ -163,7 +163,7 @@
 					<onlyFirstImage>
 						<TCEforms>
 							<exclude>1</exclude>
-							<label>LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.onlyFirstImage</label>
+							<label>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.onlyFirstImage</label>
 							<config>
 								<type>imagecycle-selectOrCheckbox</type>
 								<checked>0</checked>
@@ -186,14 +186,14 @@
 		<settings>
 			<ROOT>
 				<TCEforms>
-					<sheetTitle>LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.sheet_settings</sheetTitle>
+					<sheetTitle>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.sheet_settings</sheetTitle>
 				</TCEforms>
 				<type>array</type>
 				<el>
 					<imagewidth>
 						<TCEforms>
 							<exclude>1</exclude>
-							<label>LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.imagewidth</label>
+							<label>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.imagewidth</label>
 							<config>
 								<type>input</type>
 								<size>16</size>
@@ -205,7 +205,7 @@
 					<imageheight>
 						<TCEforms>
 							<exclude>1</exclude>
-							<label>LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.imageheight</label>
+							<label>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.imageheight</label>
 							<config>
 								<type>input</type>
 								<size>16</size>
@@ -217,7 +217,7 @@
 					<sliceColorHiddenSides>
 						<TCEforms>
 							<exclude>1</exclude>
-							<label>LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.sliceColorHiddenSides</label>
+							<label>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.sliceColorHiddenSides</label>
 							<config>
 								<type>input</type>
 								<size>10</size>
@@ -244,19 +244,19 @@
 		<movement>
 			<ROOT>
 				<TCEforms>
-					<sheetTitle>LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.sheet_movement</sheetTitle>
+					<sheetTitle>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.sheet_movement</sheetTitle>
 				</TCEforms>
 				<type>array</type>
 				<el>
 					<sliceOrientation>
 						<TCEforms>
 							<exclude>1</exclude>
-							<label>LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.sliceOrientation</label>
+							<label>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.sliceOrientation</label>
 							<config>
 								<type>select</type>
 								<items type="array">
 									<numIndex index="0" type="array">
-										<numIndex index="0">LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.from_ts</numIndex>
+										<numIndex index="0">LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.from_ts</numIndex>
 										<numIndex index="1"></numIndex>
 									</numIndex>
 									<numIndex index="1" type="array">
@@ -281,7 +281,7 @@
 					<slicePerspective>
 						<TCEforms>
 							<exclude>1</exclude>
-							<label>LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.slicePerspective</label>
+							<label>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.slicePerspective</label>
 							<config>
 								<type>input</type>
 								<size>6</size>
@@ -294,7 +294,7 @@
 					<sliceSlicesCount>
 						<TCEforms>
 							<exclude>1</exclude>
-							<label>LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.sliceSlicesCount</label>
+							<label>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.sliceSlicesCount</label>
 							<config>
 								<type>input</type>
 								<eval>double2</eval>
@@ -316,7 +316,7 @@
 					<sliceDisperseFactor>
 						<TCEforms>
 							<exclude>1</exclude>
-							<label>LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.sliceDisperseFactor</label>
+							<label>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.sliceDisperseFactor</label>
 							<config>
 								<type>input</type>
 								<size>2</size>
@@ -329,7 +329,7 @@
 					<sliceSequentialRotation>
 						<TCEforms>
 							<exclude>1</exclude>
-							<label>LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.sliceSequentialRotation</label>
+							<label>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.sliceSequentialRotation</label>
 							<config>
 								<type>imagecycle-selectOrCheckbox</type>
 								<checked>0</checked>
@@ -339,7 +339,7 @@
 					<sliceSequentialFactor>
 						<TCEforms>
 							<exclude>1</exclude>
-							<label>LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.sliceSequentialFactor</label>
+							<label>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.sliceSequentialFactor</label>
 							<config>
 								<type>input</type>
 								<size>6</size>
@@ -352,7 +352,7 @@
 					<sliceSpeed3d>
 						<TCEforms>
 							<exclude>1</exclude>
-							<label>LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.sliceSpeed3d</label>
+							<label>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.sliceSpeed3d</label>
 							<config>
 								<type>input</type>
 								<size>6</size>
@@ -365,7 +365,7 @@
 					<sliceSlideshow>
 						<TCEforms>
 							<exclude>1</exclude>
-							<label>LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.sliceSlideshow</label>
+							<label>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.sliceSlideshow</label>
 							<config>
 								<type>imagecycle-selectOrCheckbox</type>
 								<checked>0</checked>
@@ -375,7 +375,7 @@
 					<sliceSlideshowTime>
 						<TCEforms>
 							<exclude>1</exclude>
-							<label>LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.sliceSlideshowTime</label>
+							<label>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.sliceSlideshowTime</label>
 							<config>
 								<type>input</type>
 								<size>6</size>
@@ -388,12 +388,12 @@
 					<sliceEasing>
 						<TCEforms>
 							<exclude>1</exclude>
-							<label>LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.sliceEasing</label>
+							<label>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.sliceEasing</label>
 							<config>
 								<type>select</type>
 								<items type="array">
 									<numIndex index="0" type="array">
-										<numIndex index="0">LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.from_ts</numIndex>
+										<numIndex index="0">LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.from_ts</numIndex>
 										<numIndex index="1"></numIndex>
 									</numIndex>
 									<numIndex index="1" type="array">
@@ -429,14 +429,14 @@
 		<fallback>
 			<ROOT>
 				<TCEforms>
-					<sheetTitle>LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.sheet_fallback</sheetTitle>
+					<sheetTitle>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.sheet_fallback</sheetTitle>
 				</TCEforms>
 				<type>array</type>
 				<el>
 					<sliceSpeed>
 						<TCEforms>
 							<exclude>1</exclude>
-							<label>LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.sliceSpeed</label>
+							<label>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.sliceSpeed</label>
 							<config>
 								<type>input</type>
 								<size>6</size>
@@ -452,14 +452,14 @@
 		<special>
 			<ROOT>
 				<TCEforms>
-					<sheetTitle>LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.sheet_special</sheetTitle>
+					<sheetTitle>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.sheet_special</sheetTitle>
 				</TCEforms>
 				<type>array</type>
 				<el>
 					<options>
 						<TCEforms>
 							<exclude>1</exclude>
-							<label>LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.optionsSlice</label>
+							<label>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.optionsSlice</label>
 							<config>
 								<type>text</type>
 								<wrap>OFF</wrap>
@@ -471,7 +471,7 @@
 					<optionsOverride>
 						<TCEforms>
 							<exclude>1</exclude>
-							<label>LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.optionsOverride</label>
+							<label>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.optionsOverride</label>
 							<config>
 								<type>check</type>
 								<default>0</default>

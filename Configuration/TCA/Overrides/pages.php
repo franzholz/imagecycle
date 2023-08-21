@@ -11,11 +11,11 @@ $table = 'pages';
 $tempColumns = array();
 $tempColumns['tx_imagecycle_mode'] = array(
     'exclude' => 1,
-    'label' => 'LLL:EXT:imagecycle/locallang_db.xml:' . $table . '.tx_imagecycle_mode',
+    'label' => 'LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:' . $table . '.tx_imagecycle_mode',
     'config' => array(
         'type' => 'select',
         'items' => array (
-            array('LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.mode.I.recursiv', 'recursiv'),
+            array('LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.mode.I.recursiv', 'recursiv'),
         ),
         'itemsProcFunc' => 'TYPO3Extension\Imagecycle\Backend\ItemsProcFunc->getModes',
         'displayMode' => 'page',
@@ -26,7 +26,7 @@ $tempColumns['tx_imagecycle_mode'] = array(
 // Normal page fields
 $tempColumns['tx_imagecycle_images'] = array(
     'exclude' => 1,
-    'label' => 'LLL:EXT:imagecycle/locallang_db.xml:' . $table . '.tx_imagecycle_images',
+    'label' => 'LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:' . $table . '.tx_imagecycle_images',
     'displayCond' => 'FIELD:tx_imagecycle_mode:!IN:recursiv,,dam,dam_catedit',
     'config' => array(
         'type' => 'group',
@@ -42,7 +42,7 @@ $tempColumns['tx_imagecycle_images'] = array(
 );
 $tempColumns['tx_imagecycle_hrefs'] = array(
     'exclude' => 1,
-    'label' => 'LLL:EXT:imagecycle/locallang_db.xml:' . $table . '.tx_imagecycle_hrefs',
+    'label' => 'LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:' . $table . '.tx_imagecycle_hrefs',
     'displayCond' => 'FIELD:tx_imagecycle_mode:!IN:recursiv,,dam,dam_catedit',
     'config' => array(
         'type' => 'text',
@@ -53,7 +53,7 @@ $tempColumns['tx_imagecycle_hrefs'] = array(
 );
 $tempColumns['tx_imagecycle_captions'] = array(
     'exclude' => 1,
-    'label' => 'LLL:EXT:imagecycle/locallang_db.xml:' . $table . '.tx_imagecycle_captions',
+    'label' => 'LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:' . $table . '.tx_imagecycle_captions',
     'displayCond' => 'FIELD:tx_imagecycle_mode:!IN:recursiv,,dam,dam_catedit',
     'config' => array(
         'type' => 'text',
@@ -64,11 +64,11 @@ $tempColumns['tx_imagecycle_captions'] = array(
 );
 $tempColumns['tx_imagecycle_effect'] = array(
     'exclude' => 1,
-    'label' => 'LLL:EXT:imagecycle/locallang_db.xml:' . $table . '.tx_imagecycle_effect',
+    'label' => 'LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:' . $table . '.tx_imagecycle_effect',
     'config' => array(
         'type' => 'select',
         'items' => array(
-            array('LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.from_ts', ''),
+            array('LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.from_ts', ''),
         ),
         'itemsProcFunc' => 'TYPO3Extension\Imagecycle\Backend\ItemsProcFunc->getEffects',
         'size' => 1,
@@ -77,7 +77,7 @@ $tempColumns['tx_imagecycle_effect'] = array(
 );
 $tempColumns['tx_imagecycle_stoprecursion'] = array(
     'exclude' => 1,
-    'label' => 'LLL:EXT:imagecycle/locallang_db.xml:' . $table . '.tx_imagecycle_stoprecursion',
+    'label' => 'LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:' . $table . '.tx_imagecycle_stoprecursion',
     'displayCond' => 'FIELD:tx_imagecycle_mode:!IN:recursiv,',
     'config' => array(
         'type' => 'check',
@@ -85,5 +85,5 @@ $tempColumns['tx_imagecycle_stoprecursion'] = array(
 );
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns($table, $tempColumns);
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes($table, '--div--;LLL:EXT:imagecycle/locallang_db.xml:' . $table . '.tx_imagecycle_div, tx_imagecycle_mode;;;;3-3-3, tx_imagecycle_damimages, tx_imagecycle_damcategories, tx_imagecycle_images, tx_imagecycle_hrefs, tx_imagecycle_captions, tx_imagecycle_effect, tx_imagecycle_stoprecursion');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes($table, '--div--;LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:' . $table . '.tx_imagecycle_div, tx_imagecycle_mode;;;;3-3-3, tx_imagecycle_damimages, tx_imagecycle_damcategories, tx_imagecycle_images, tx_imagecycle_hrefs, tx_imagecycle_captions, tx_imagecycle_effect, tx_imagecycle_stoprecursion');
 

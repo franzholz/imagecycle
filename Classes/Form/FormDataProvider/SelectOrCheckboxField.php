@@ -48,9 +48,9 @@ class SelectOrCheckboxField extends AbstractItemProvider implements FormDataProv
                 $fieldConfig['config']['type'] = 'select';
                 $fieldConfig['config']['renderType'] = 'selectSingle';
                 $fieldConfig['config']['items'] = array(
-                    ['LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.from_ts', 2],
-                    ['LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.yes', 1],
-                    ['LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.no', 0],
+                    ['LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.from_ts', 2],
+                    ['LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.yes', 1],
+                    ['LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.no', 0],
                 );
             } else {
                 $fieldConfig['config']['type'] = 'check';

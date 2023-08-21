@@ -217,20 +217,20 @@ class ItemsProcFunc
 	{
 		$optionList = array();
 		$optionList[] = array(
-			$GLOBALS['LANG']->sL('LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.mode.I.upload'),
+			$GLOBALS['LANG']->sL('LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.mode.I.upload'),
 			'upload',
-			'EXT:imagecycle/mode_upload.gif'
+			'EXT:imagecycle/Resources/Public/Icons/mode_upload.gif'
 		);
 		if ($config['config']['displayMode'] != 'page') {
 			$optionList[] = array(
-				$GLOBALS['LANG']->sL('LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.mode.I.rte'),
+				$GLOBALS['LANG']->sL('LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.mode.I.rte'),
 				'uploadRTE',
-				'EXT:imagecycle/mode_rte.gif'
+				'EXT:imagecycle/Resources/Public/Icons/mode_rte.gif'
 			);
 			$optionList[] = array(
-				$GLOBALS['LANG']->sL('LLL:EXT:imagecycle/locallang_db.xml:tt_content.pi_flexform.mode.I.data'),
+				$GLOBALS['LANG']->sL('LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.mode.I.data'),
 				'uploadData',
-				'EXT:imagecycle/mode_data.gif'
+				'EXT:imagecycle/Resources/Public/Icons/mode_data.gif'
 			);
 		}
 		if (isset($config['items']) && is_array($config['items'])) {

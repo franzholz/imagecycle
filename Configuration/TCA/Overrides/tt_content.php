@@ -7,20 +7,20 @@ if (!defined ('IMAGECYLCE_EXT')) {
 
 $table = 'tt_content';
 
-$relativeExtensionPath = 'EXT:' . IMAGECYLCE_EXT . '/'; 
+$relativeImagePath = 'EXT:' . IMAGECYLCE_EXT . '/Resources/Public/Icons/'; 
 
 // CONTENT
 $tempColumns = array(
     'tx_imagecycle_activate' => array(
         'exclude' => 1,
-        'label' => 'LLL:EXT:' . IMAGECYLCE_EXT . '/locallang_db.xml:' . $table . '.tx_imagecycle_activate',
+        'label' => 'LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:' . $table . '.tx_imagecycle_activate',
         'config' => array(
             'type' => 'check',
         )
     ),
     'tx_imagecycle_duration' => array(
         'exclude' => 1,
-        'label' => 'LLL:EXT:' . IMAGECYLCE_EXT . '/locallang_db.xml:' . $table . '.tx_imagecycle_duration',
+        'label' => 'LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:' . $table . '.tx_imagecycle_duration',
         'config' => array(
             'type' => 'input',
             'size' => '5',
@@ -35,16 +35,16 @@ $GLOBALS['TCA'][$table]['palettes']['tx_imagecycle'] = array(
     'showitem' => 'tx_imagecycle_activate,tx_imagecycle_duration',
     'canNotCollapse' => 1,
 );
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes($table, '--palette--;LLL:EXT:' . IMAGECYLCE_EXT . '/locallang_db.xml:' . $table . '.tx_imagecycle_title;tx_imagecycle', 'textpic,image', 'before:imagecaption');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes($table, '--palette--;LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:' . $table . '.tx_imagecycle_title;tx_imagecycle', 'textpic,image', 'before:imagecaption');
 
 $listType = 'imagecycle_pi1';
 
 // ICON pi1
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
     array(
-        'LLL:EXT:' . IMAGECYLCE_EXT . '/locallang_db.xml:' . $table . '.list_type_pi1',
+        'LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:' . $table . '.list_type_pi1',
         $listType,
-        $relativeExtensionPath . 'pi1/ce_icon.gif'
+        $relativeImagePath . 'Pi1/ce_icon.gif'
     ),
     'list_type',
     IMAGECYLCE_EXT
@@ -60,9 +60,9 @@ $listType = 'imagecycle_pi2';
 // ICON pi2
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
     array(
-        'LLL:EXT:' . IMAGECYLCE_EXT . '/locallang_db.xml:' . $table . '.list_type_pi2', 
+        'LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:' . $table . '.list_type_pi2', 
         $listType,
-        $relativeExtensionPath . 'pi2/ce_icon.gif'
+        $relativeImagePath . 'Pi2/ce_icon.gif'
     ),
     'list_type',
     IMAGECYLCE_EXT
@@ -77,9 +77,9 @@ $listType = 'imagecycle_pi3';
 // ICON pi3
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
     array(
-        'LLL:EXT:imagecycle/locallang_db.xml:' . $table . '.list_type_pi3',
+        'LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:' . $table . '.list_type_pi3',
         $listType,
-        $relativeExtensionPath . 'pi3/ce_icon.gif'
+        $relativeImagePath . 'Pi3/ce_icon.gif'
     ),
     'list_type',
     IMAGECYLCE_EXT
@@ -94,9 +94,9 @@ $listType = 'imagecycle_pi4';
 // ICON pi4
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
     array(
-        'LLL:EXT:' . IMAGECYLCE_EXT . '/locallang_db.xml:' . $table . '.list_type_pi4',
+        'LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:' . $table . '.list_type_pi4',
         $listType,
-        $relativeExtensionPath . 'pi4/ce_icon.gif'
+        $relativeImagePath . 'Pi4/ce_icon.gif'
     ),
     'list_type',
     IMAGECYLCE_EXT
@@ -111,9 +111,9 @@ $listType = 'imagecycle_pi5';
 // ICON pi5
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
     array(
-        'LLL:EXT:' . IMAGECYLCE_EXT . '/locallang_db.xml:' . $table . '.list_type_pi5',
+        'LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:' . $table . '.list_type_pi5',
         $listType,
-        $relativeExtensionPath . 'pi5/ce_icon.gif'
+        $relativeImagePath . 'Pi5/ce_icon.gif'
     ),
     'list_type',
     IMAGECYLCE_EXT
