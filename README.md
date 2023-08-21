@@ -2,7 +2,7 @@
 
 This repository is replacing the TYPO3 Extension
 [Imagecycle](https://typo3.org/extensions/repository/view/imagecycle) and it has been built starting from the former fork at [a7digital Imagecycle](https://github.com/a7digital/imagecycle).
-TYPO3 8.7 is supported.
+TYPO3 10.4, 11.5 and 12.4 are supported.
 
 ## Remarks
 
@@ -17,9 +17,12 @@ However, a jQuery/TWBS colour picker is not yet implemented - neither in this ex
 ## Third Party Extennsions
 The extension t3jquery seems not to exist any more and TYPO3 10 will provide jQuery for extensions. Any support for t3jquery shall therefore be dropped in a later version.
 
-Now you can use the extension lib_jquery. In this case its jquery-x.min.js library will be used automatically.
+You can use the extension lib_jquery instead. In this case its jquery-x.min.js library will be used automatically.
+
+The extension patch10011 is needed for a Typoscript condition to check if extension news has been installed.
+
 
 ## Inspiring People to Share
 
-An extension upgrade for the TYPO3 CMS 9.5 and 10 should come one day.
+An extension upgrade for the TYPO3 10, 11 and 12 is in preparation on the develop branch.
 
