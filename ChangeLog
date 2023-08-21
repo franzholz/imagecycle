@@ -1,4 +1,5 @@
 2023-08-21 Franz Holzinger <franz@ttproducts.de>
+    * Breaking 87193 for TYPO3 10: remove configuration parameter useCacheHash from all links.
     * compatibility Deprecation no.92947: replace TYPO3_MODE by TYPO3 or remove this constant
 
 2022-09-10  Franz Holzinger  <franz@ttproducts.de>

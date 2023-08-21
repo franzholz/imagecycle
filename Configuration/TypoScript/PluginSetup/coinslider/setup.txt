@@ -213,7 +213,6 @@ plugin.tx_imagecycle_pi2 {
 						data = LLL:EXT:tt_news/pi/locallang.xml:more
 						typolink {
 							parameter = {$plugin.tt_news.singlePid}
-							useCacheHash = 1
 							additionalParams.cObject = COA
 							additionalParams.cObject {
 								10 = TEXT
