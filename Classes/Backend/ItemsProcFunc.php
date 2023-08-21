@@ -158,6 +158,7 @@ class ItemsProcFunc
 	*/
 	public function getThemesNivo($config, $item)
 	{
+        $languageSubpath = '/Resources/Private/Language/';
 		$confArr = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['imagecycle']);
 		if (! is_dir(GeneralUtility::getFileAbsFileName($confArr['nivoThemeFolder']))) {
 			// if the defined folder does not exist, define the default folder
@@ -179,11 +180,11 @@ class ItemsProcFunc
 		}
 
 		// 
-		$info_text = NULL;
+		$info_text = null;
 		if (file_exists(GeneralUtility::getFileAbsFileName($confArr['nivoThemeFolder'] . $theme . '/readme.txt'))) {
 			$info_text = $GLOBALS['LANG']->sL(file_get_contents(GeneralUtility::getFileAbsFileName($confArr['nivoThemeFolder'] . $theme . '/readme.txt')));
 			$queue = GeneralUtility::makeInstance(FlashMessageQueue::class);
-			$message = GeneralUtility::makeInstance(FlashMessage::class, $info_text, $GLOBALS['LANG']->sL('LLL:EXT:imagecycle/locallang.xml:pi3_theme_info'), FlashMessage::INFO);
+			$message = GeneralUtility::makeInstance(FlashMessage::class, $info_text, $GLOBALS['LANG']->sL('LLL:EXT:imagecycle' . $languageSubpath . 'locallang.xlf:pi3_theme_info'), FlashMessage::INFO);
 			$queue->addMessage($message);
 		}
 

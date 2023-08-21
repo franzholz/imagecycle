@@ -37,6 +37,7 @@ class WizardIcon
      */
     public function proc (array $wizardItems)
     {
+        $languageSubpath = '/Resources/Private/Language/';
         $iconRegistry = GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
         $iconPath = 'Resources/Public/Icons/Wizard/';
 
@@ -66,8 +67,8 @@ class WizardIcon
         foreach ($wizardArray as $type => $wizardConf) {
             $params = '&defVals[tt_content][CType]=list&defVals[tt_content][list_type]=' . $wizardConf['list_type'];
             $wizardItem = array(
-                'title' => $GLOBALS['LANG']->sL('LLL:EXT:' . IMAGECYLCE_EXT . 'locallang.xml:' . $type . '_title'),
-                'description' => $GLOBALS['LANG']->sL('LLL:EXT:' . IMAGECYLCE_EXT . DIV2007_LANGUAGE_SUBPATH . 'locallang.xml:' . $type . '_plus_wiz_description'),
+                'title' => $GLOBALS['LANG']->sL('LLL:EXT:' . IMAGECYLCE_EXT . $languageSubpath . 'locallang.xlf:' . $type . '_title'),
+                'description' => $GLOBALS['LANG']->sL('LLL:EXT:' . IMAGECYLCE_EXT . $languageSubpath . 'locallang.xlf:' . $type . '_plus_wiz_description'),
                 'params' => $params
             );
             $iconIdentifier = 'extensions-imagecycle-' . $type . '-wizard';

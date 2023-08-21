@@ -95,12 +95,12 @@ plugin.tx_imagecycle_pi5 {
 	<ul class="tx-imagecycle-pi5-images sb-slider" id="{register:key}"> | </ul>
 	<div class="sb-shadow"></div>
 	<div class="sb-nav-arrows">
-		<a href="#">{LLL:EXT:imagecycle/pi5/locallang.xml:next}</a>
-		<a href="#">{LLL:EXT:imagecycle/pi5/locallang.xml:previous}</a>
+		<a href="#">{LLL:EXT:imagecycle/Resources/Private/Language/Pi5/locallang.xlf:next}</a>
+		<a href="#">{LLL:EXT:imagecycle/Resources/Private/Language/Pi5/locallang.xlf:previous}</a>
 	</div>
 	<div class="sb-nav-options">
-		<span id="navPlay">{LLL:EXT:imagecycle/pi5/locallang.xml:play}</span>
-		<span id="navPause">{LLL:EXT:imagecycle/pi5/locallang.xml:pause}</span>
+		<span id="navPlay">{LLL:EXT:imagecycle/Resources/Private/Language/Pi5/locallang.xlf:play}</span>
+		<span id="navPause">{LLL:EXT:imagecycle/Resources/Private/Language/Pi5/locallang.xlf:pause}</span>
 	</div>
 </div>
 )
@@ -230,7 +230,7 @@ plugin.tx_imagecycle_pi5 {
 					30 {
 						wrap = <br />|
 						htmlSpecialChars = 1
-						data = LLL:EXT:tt_news/pi/locallang.xml:more
+						data = LLL:EXT:tt_news/Resources/Private/Language/Plugin/locallang_pi.xlf:more
 						typolink {
 							parameter = {$plugin.tt_news.singlePid}
 							useCacheHash = 1

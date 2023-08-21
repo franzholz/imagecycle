@@ -1,1 +1,1 @@
-LLL:EXT:imagecycle/locallang.xml:pi3_theme_orman
+LLL:EXT:imagecycle/Resources/Private/Language/locallang.xlf:pi3_theme_orman

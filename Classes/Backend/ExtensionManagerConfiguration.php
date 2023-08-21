@@ -79,15 +79,16 @@ class ExtensionManagerConfiguration
 	public function displayMessage(&$params, &$tsObj)
 	{
 		$out = '';
+        $languageSubpath = '/Resources/Private/Language/';
 
 		$checkConfig = null;
 		if ($this->checkConfig() === false) {
 			$out = '
 <div style="position:absolute;top:10px;right:10px; width:300px;">
 	<div class="typo3-message message-warning">
-		<div class="message-header">' . $GLOBALS['LANG']->sL('LLL:EXT:imagecycle/locallang.xml:extmng.classInnerHeader') . '</div>
+		<div class="message-header">' . $GLOBALS['LANG']->sL('LLL:EXT:imagecycle' . $languageSubpath . 'locallang.xlf:extmng.classInnerHeader') . '</div>
 		<div class="message-body">
-			' . $GLOBALS['LANG']->sL('LLL:EXT:imagecycle/locallang.xml:extmng.classInner') . '
+			' . $GLOBALS['LANG']->sL('LLL:EXT:imagecycle' . $languageSubpath . 'locallang.xlf:extmng.classInner') . '
 		</div>
 	</div>
 </div>';

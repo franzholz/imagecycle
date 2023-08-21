@@ -294,7 +294,7 @@ plugin.tx_imagecycle_pi1 {
 					30 {
 						wrap = <br />|
 						htmlSpecialChars = 1
-						data = LLL:EXT:tt_news/pi/locallang.xml:more
+						data = LLL:EXT:tt_news/Resources/Private/Language/Plugin/locallang_pi.xlf:more
 						typolink {
 							parameter = {$plugin.tt_news.singlePid}
 							additionalParams.cObject = COA
