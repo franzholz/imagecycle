@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2023-08-21T11:05:43Z" product-name="imagecycle">
+		<header/>
+		<body>
+			<trans-unit id="pi1_title" resname="pi1_title"  approved="yes">
+				<source>Image cycle</source>
+				<target>Image cycle</target>
+			</trans-unit>
+			<trans-unit id="pi1_plus_wiz_description" resname="pi1_plus_wiz_description"  approved="yes">
+				<source>Add an image cycle to your content</source>
+				<target>Image Cycle hinzufügen</target>
+			</trans-unit>
+			<trans-unit id="pi2_title" resname="pi2_title"  approved="yes">
+				<source>Coin-Slider</source>
+				<target>Coin-Slider</target>
+			</trans-unit>
+			<trans-unit id="pi2_plus_wiz_description" resname="pi2_plus_wiz_description"  approved="yes">
+				<source>Add a Coin-Slider to your content</source>
+				<target>Coin-Slider hinzufügen</target>
+			</trans-unit>
+			<trans-unit id="pi3_title" resname="pi3_title"  approved="yes">
+				<source>Nivo-Slider</source>
+				<target>Nivo-Slider</target>
+			</trans-unit>
+			<trans-unit id="pi3_plus_wiz_description" resname="pi3_plus_wiz_description"  approved="yes">
+				<source>Add a Nivo-Slider to your content</source>
+				<target>Nivo-Slider hinzufügen</target>
+			</trans-unit>
+			<trans-unit id="pi3_theme_info" resname="pi3_theme_info"  approved="yes">
+				<source>Theme information</source>
+				<target>Theme Information</target>
+			</trans-unit>
+			<trans-unit id="pi3_theme_orman" resname="pi3_theme_orman"  approved="yes">
+				<source>Note: Images used in the slider for the Orman Theme should have the dimensions 568px x 268px</source>
+				<target>Notiz: Das Orman Theme funktioniert am besten mit der Auflösung 568px x 268px</target>
+			</trans-unit>
+			<trans-unit id="pi3_theme_pascal" resname="pi3_theme_pascal"  approved="yes">
+				<source>Note: Images used in the slider for the Pascal Theme should have the dimensions 630px x 235px and works best with 4 images</source>
+				<target>Notiz: Das Pascal Theme funktioniert am besten mit der Auflösung 630px x 235px und 4 Bilder</target>
+			</trans-unit>
+			<trans-unit id="pi4_title" resname="pi4_title"  approved="yes">
+				<source>Cross-Slider</source>
+				<target>Cross-Slider</target>
+			</trans-unit>
+			<trans-unit id="pi4_plus_wiz_description" resname="pi4_plus_wiz_description"  approved="yes">
+				<source>Add a Cross-Slider to your content</source>
+				<target>Cross-Slider hinzufügen</target>
+			</trans-unit>
+			<trans-unit id="pi5_title" resname="pi5_title"  approved="yes">
+				<source>Slice-Box</source>
+				<target>Slice-Box</target>
+			</trans-unit>
+			<trans-unit id="pi5_plus_wiz_description" resname="pi5_plus_wiz_description"  approved="yes">
+				<source>Add a Slice-Box to your content</source>
+				<target>Slice-Box hinzufügen</target>
+			</trans-unit>
+			<trans-unit id="cms_layout.style" resname="cms_layout.style"  approved="yes">
+				<source>Display: %s</source>
+				<target>Anzeige: %s</target>
+			</trans-unit>
+			<trans-unit id="cms_layout.not_configured" resname="cms_layout.not_configured"  approved="yes">
+				<source>Plugin is not configured!</source>
+				<target>Plugin ist nicht Konfiguriert!</target>
+			</trans-unit>
+			<trans-unit id="cms_layout.from_ts" resname="cms_layout.from_ts"  approved="yes">
+				<source>From Typoscript</source>
+				<target>Vom Typoscript</target>
+			</trans-unit>
+			<trans-unit id="extmng.classInnerHeader" resname="extmng.classInnerHeader"  approved="yes">
+				<source>Warning!</source>
+				<target>Warnung!</target>
+			</trans-unit>
+			<trans-unit id="extmng.classInner" resname="extmng.classInner"  approved="yes">
+				<source>You have to use the &quot;Update&quot;-Button below to ensure proper working for all functions in this extension.</source>
+				<target>Sie müssen den &quot;Update&quot;-Knopf drücken um das korrekte Funktionieren der Erweiterung zu gewährleisten.</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
