@@ -303,13 +303,10 @@
 									<lower>0.00</lower>
 									<upper>1.00</upper>
 								</range>
-								<wizards>
-									<slider>
-										<type>slider</type>
-										<step>0.01</step>
-										<width>300</width>
-									</slider>
-								</wizards>
+                                <slider>
+                                    <step>0.01</step>
+                                    <width>300</width>
+                                </slider>
 							</config>
 						</TCEforms>
 					</sliceSlicesCount>
