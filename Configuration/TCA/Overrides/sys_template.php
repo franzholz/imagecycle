@@ -1,44 +1,44 @@
 <?php
 defined('TYPO3') || die('Access denied.');
 
-if (!defined ('IMAGECYLCE_EXT')) {
-    define('IMAGECYLCE_EXT', 'imagecycle');
-}
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-    IMAGECYLCE_EXT,#
-    'Configuration/TypoScript/PluginSetup/',
-    'Image-Cycle'
-);
+call_user_func(function($extensionKey, $table)
+{
+    ExtensionManagementUtility::addStaticFile(
+        $extensionKey,
+        'Configuration/TypoScript/PluginSetup/',
+        'Image-Cycle'
+    );
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-    IMAGECYLCE_EXT,
-    'Configuration/TypoScript/PluginSetup/tt_content/',
-    'Image-Cycle for tt_content'
-);
+    ExtensionManagementUtility::addStaticFile(
+        $extensionKey,
+        'Configuration/TypoScript/PluginSetup/tt_content/',
+        'Image-Cycle for tt_content'
+    );
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-    IMAGECYLCE_EXT,
-    'Configuration/TypoScript/PluginSetup/coinslider/',
-    'Coin-Slider'
-);
+    ExtensionManagementUtility::addStaticFile(
+        $extensionKey,
+        'Configuration/TypoScript/PluginSetup/coinslider/',
+        'Coin-Slider'
+    );
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-    IMAGECYLCE_EXT,
-    'Configuration/TypoScript/PluginSetup/nivoslider/',
-    'Nivo-Slider'
-);
+    ExtensionManagementUtility::addStaticFile(
+        $extensionKey,
+        'Configuration/TypoScript/PluginSetup/nivoslider/',
+        'Nivo-Slider'
+    );
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-    IMAGECYLCE_EXT,
-    'Configuration/TypoScript/PluginSetup/crossslide/',
-    'Cross-Slide'
-);
+    ExtensionManagementUtility::addStaticFile(
+        $extensionKey,
+        'Configuration/TypoScript/PluginSetup/crossslide/',
+        'Cross-Slide'
+    );
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-    IMAGECYLCE_EXT,
-    'Configuration/TypoScript/PluginSetup/slicebox/', 
-    'Slice-Box'
-);
-
+    ExtensionManagementUtility::addStaticFile(
+        $extensionKey,
+        'Configuration/TypoScript/PluginSetup/slicebox/', 
+        'Slice-Box'
+    );
+}, 'imagecycle', basename(__FILE__, '.php'));
 
