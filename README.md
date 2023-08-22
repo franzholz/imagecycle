@@ -21,5 +21,5 @@ Now you can use the extension lib_jquery. In this case its jquery-x.min.js libra
 
 ## Inspiring People to Share
 
-An extension upgrade for the TYPO3 CMS 9.5 and 10 should come one day.
+An extension upgrade for the TYPO3 CMS 10.4 and 11.5 can be tested on the develop branch.
 
