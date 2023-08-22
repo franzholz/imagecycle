@@ -117,21 +117,22 @@
 												<size>15</size>
 												<max>255</max>
 												<eval>trim</eval>
-												<wizards>
-													<_PADDING>2</_PADDING>
-													<link>
-														<type>popup</type>
-														<title>Link</title>
-														<icon>Resources/Public/Icons/Resources/Private/Language/</icon>
-														<module type="array">
-															<name>wizard_element_browser</name>
-															<urlParameters type="array">
-																<mode>wizard</mode>
-															</urlParameters>
-														</module>
-														<JSopenParams>height=500,width=500,status=0,menubar=0,scrollbars=1</JSopenParams>
-													</link>
-												</wizards>
+                                                <editPopup>
+                                                    <disabled>0</disabled>
+                                                    <options>
+                                                        <title>Link</title>
+                                                        <windowOpenParameters>
+                                                            height=500,width=500,status=0,menubar=0,scrollbars=1
+                                                        </windowOpenParameters>
+                                                    </options>
+                                                </editPopup>
+                                                <addRecord>
+                                                    <disabled>0</disabled>
+                                                </addRecord>
+                                                <listModule>
+                                                    <disabled>0</disabled>
+                                                </listModule>
+                                                <eval>trim</eval>
 											</config>
 										</TCEforms>
 									</href>
