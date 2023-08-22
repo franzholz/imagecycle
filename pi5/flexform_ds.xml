@@ -220,21 +220,8 @@
 							<label>LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.sliceColorHiddenSides</label>
 							<config>
 								<type>input</type>
+								<renderType>colorpicker</renderType>
 								<size>10</size>
-								<wizards>
-									<_PADDING>2</_PADDING>
-									<color>
-										<type>colorbox</type>
-										<title>Color</title>
-										<dim>16x16</dim>
-										<script>wizard_colorpicker.php</script>
-										<tableStyle>border:solid 1px black;</tableStyle>
-										<JSopenParams>height=500,width=500,status=0,menubar=0,scrollbars=1</JSopenParams>
-										<module type="array">
-											<name>wizard_colorpicker</name>
-										</module>
-									</color>
-								</wizards>
 							</config>
 						</TCEforms>
 					</sliceColorHiddenSides>
