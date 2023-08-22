@@ -15,7 +15,6 @@ CREATE TABLE pages (
 
 
 
-
 #
 # Table structure for table 'tt_content'
 #

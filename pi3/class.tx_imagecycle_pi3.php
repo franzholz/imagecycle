@@ -22,8 +22,10 @@
 *  This copyright notice MUST APPEAR in all copies of the script!
 ***************************************************************/
 
-use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+use TYPO3\CMS\Core\Configuration\ExtensionConfiguration;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
+
+use TYPO3Extension\Imagecycle\Controller\PageRenderer;
 
 /**
  * [CLASS/FUNCTION INDEX of SCRIPT]
@@ -31,7 +33,6 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
  * Hint: use extdeveval to insert/update function index above.
  */
 
-require_once(ExtensionManagementUtility::extPath('imagecycle').'pi1/class.tx_imagecycle_pi1.php');
 
 /**
  * Plugin 'Nivo-Slider' for the 'imagecycle' extension.
@@ -327,8 +328,12 @@ class tx_imagecycle_pi3 extends tx_imagecycle_pi1
 	 */
 	public function parseTemplate ($data = array(), $dir = '', $onlyJS = false)
 	{
-		$this->pagerenderer = GeneralUtility::makeInstance(\TYPO3Extension\Imagecycle\Controller\PageRenderer::class);
+		$this->pagerenderer = GeneralUtility::makeInstance(PageRenderer::class);
 		$this->pagerenderer->setConf($this->conf);
+        $extensionConfiguration = GeneralUtility::makeInstance(
+            ExtensionConfiguration::class
+        )->get($this->extKey);
+
         $jQueryAvailable = false;
         if (class_exists(\Sonority\LibJquery\Hooks\PageRenderer::class)) {
             $jQueryAvailable = true;
@@ -381,22 +386,22 @@ class tx_imagecycle_pi3 extends tx_imagecycle_pi1
 
 		// define the css file
 		$this->pagerenderer->addCssFile($this->conf['cssFileNivo']);
-
+		
 		// define the style
 		$themeClass = 'theme-default';
 		if ($this->conf['nivoTheme']) {
-			$confArr = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['imagecycle']);
-			if (! is_dir(GeneralUtility::getFileAbsFileName($confArr['nivoThemeFolder']))) {
+			if (! is_dir(GeneralUtility::getFileAbsFileName($extensionConfiguration['nivoThemeFolder']))) {
 				// if the defined folder does not exist, define the default folder
-				GeneralUtility::devLog('Path \'' . $confArr['nivoThemeFolder'] . '\' does not exist', 'imagecycle', 1);
-				$confArr['nivoThemeFolder'] = 'EXT:imagecycle/res/css/nivoslider/';
+				GeneralUtility::devLog('Path \'' . $extensionConfiguration['nivoThemeFolder'] . '\' does not exist', 'imagecycle', 1);
+				$extensionConfiguration['nivoThemeFolder'] = 'EXT:imagecycle/res/css/nivoslider/';
 			}
-			if (! is_dir(GeneralUtility::getFileAbsFileName($confArr['nivoThemeFolder'] . $this->conf['nivoTheme']))) {
+
+			if (! is_dir(GeneralUtility::getFileAbsFileName($extensionConfiguration['nivoThemeFolder'] . $this->conf['nivoTheme']))) {
 				// if the skin does not exist, the default skin will be selected
 				GeneralUtility::devLog('Skin \''.$this->conf['nivoTheme'].'\' does not exist', 'imagecycle', 1);
 				$this->pagerenderer->addCssFile('EXT:imagecycle/res/css/nivoslider/default/style.css');
 			} else {
-				$this->pagerenderer->addCssFile($confArr['nivoThemeFolder'] . $this->conf['nivoTheme'] . '/style.css');
+				$this->pagerenderer->addCssFile($extensionConfiguration['nivoThemeFolder'] . $this->conf['nivoTheme'] . '/style.css');
 			}
 			$themeClass = 'theme-'.$this->conf['nivoTheme'];
 		}

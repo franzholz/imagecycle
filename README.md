@@ -2,7 +2,7 @@
 
 This repository is replacing the TYPO3 Extension
 [Imagecycle](https://typo3.org/extensions/repository/view/imagecycle) and it has been built starting from the former fork at [a7digital Imagecycle](https://github.com/a7digital/imagecycle).
-TYPO3 10.4, 11.5 and 12.4 are supported.
+TYPO3 10.4 and 11.5 are supported.
 
 ## Remarks
 
@@ -10,12 +10,12 @@ The scope is to bring back functionality and compatibility for newer versions of
 
 ## Side notes
 
-Various parts have been adjusted to be compatible with TYPO3 CMS 7 LTS and 8 LTS again. Besides that, the previous custom TCA user functions that have been used in the FlexForm structures have been replaced as much as possible by a cleaner way following the new FormEngine paradigms, that have been introduced during the development phase of TYPO3 CMS 7. Custom ExtJS components have been replaced by accordant TYPO3 Core functions, based on jQuery and Bootstrap. 
+Various parts have been adjusted to be compatible with TYPO3 CMS 10 LTS and 11 LTS again. Besides that, the previous custom TCA user functions that have been used in the FlexForm structures have been replaced as much as possible by a cleaner way following the new FormEngine paradigms, that have been introduced during the development phase of TYPO3 CMS 7. Custom ExtJS components have been replaced by accordant TYPO3 Core functions, based on jQuery and Bootstrap. 
 
 However, a jQuery/TWBS colour picker is not yet implemented - neither in this extension nor in the TYPO3 Core. That is why the "old" colour picker of the TYPO3 Core is being used again (find further details in issue [#73728](https://forge.typo3.org/issues/73728)).
 
 ## Third Party Extennsions
-The extension t3jquery seems not to exist any more and TYPO3 10 will provide jQuery for extensions. Any support for t3jquery shall therefore be dropped in a later version.
+The extension t3jquery seems not to exist any more and TYPO3 10 provides jQuery for extensions. Any support for t3jquery shall therefore be dropped in a later version.
 
 You can use the extension lib_jquery instead. In this case its jquery-x.min.js library will be used automatically.
 
@@ -24,5 +24,5 @@ The extension patch10011 is needed for a Typoscript condition to check if extens
 
 ## Inspiring People to Share
 
-An extension upgrade for the TYPO3 10, 11 and 12 is in preparation on the develop branch.
+An extension upgrade for the TYPO3 12 is planned later on the develop branch.
 

@@ -28,6 +28,7 @@ namespace TYPO3Extension\Imagecycle\Backend;
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
+use TYPO3\CMS\Core\Configuration\ExtensionConfiguration;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 /**
@@ -40,6 +41,8 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 class ExtensionManagerConfiguration
 {
+    $extensionKey = 'imagecycle';
+
 	/**
 	* Return the dropdown with all skins for constant editor
 	*
@@ -86,9 +89,9 @@ class ExtensionManagerConfiguration
 			$out = '
 <div style="position:absolute;top:10px;right:10px; width:300px;">
 	<div class="typo3-message message-warning">
-		<div class="message-header">' . $GLOBALS['LANG']->sL('LLL:EXT:imagecycle' . $languageSubpath . 'locallang.xlf:extmng.classInnerHeader') . '</div>
+		<div class="message-header">' . $GLOBALS['LANG']->sL('LLL:EXT:' . $this->extensionKey . 'imagecycle' . $languageSubpath . 'locallang.xlf:extmng.classInnerHeader') . '</div>
 		<div class="message-body">
-			' . $GLOBALS['LANG']->sL('LLL:EXT:imagecycle' . $languageSubpath . 'locallang.xlf:extmng.classInner') . '
+			' . $GLOBALS['LANG']->sL('LLL:EXT:' . $this->extensionKey . $languageSubpath . 'locallang.xlf:extmng.classInner') . '
 		</div>
 	</div>
 </div>';
@@ -112,9 +115,12 @@ class ExtensionManagerConfiguration
 			'useSelectInsteadCheckbox',
 			'allowedDbTypesForCaption',
 		);
-		$confArr = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['imagecycle']);
+        $extensionConfiguration = GeneralUtility::makeInstance(
+            ExtensionConfiguration::class
+        )->get($this->extensionKey);
+
 		foreach ($confDefault as $val) {
-			if (!isset($confArr[$val]) && !isset($_POST['data'][$val])) {
+			if (!isset($extensionConfiguration[$val]) && !isset($_POST['data'][$val])) {
 				return false;
 			}
 		}

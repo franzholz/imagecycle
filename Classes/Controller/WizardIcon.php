@@ -40,6 +40,7 @@ class WizardIcon
         $languageSubpath = '/Resources/Private/Language/';
         $iconRegistry = GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
         $iconPath = 'Resources/Public/Icons/Wizard/';
+        $extensionKey = 'imagecycle';
 
         $wizardArray = array(
             'pi1' => array(
@@ -67,16 +68,16 @@ class WizardIcon
         foreach ($wizardArray as $type => $wizardConf) {
             $params = '&defVals[tt_content][CType]=list&defVals[tt_content][list_type]=' . $wizardConf['list_type'];
             $wizardItem = array(
-                'title' => $GLOBALS['LANG']->sL('LLL:EXT:' . IMAGECYLCE_EXT . $languageSubpath . 'locallang.xlf:' . $type . '_title'),
-                'description' => $GLOBALS['LANG']->sL('LLL:EXT:' . IMAGECYLCE_EXT . $languageSubpath . 'locallang.xlf:' . $type . '_plus_wiz_description'),
+                'title' => $GLOBALS['LANG']->sL('LLL:EXT:' . $extensionKey . $languageSubpath . 'locallang.xlf:' . $type . '_title'),
+                'description' => $GLOBALS['LANG']->sL('LLL:EXT:' . $extensionKey . $languageSubpath . 'locallang.xlf:' . $type . '_plus_wiz_description'),
                 'params' => $params
             );
             $iconIdentifier = 'extensions-imagecycle-' . $type . '-wizard';
             $iconRegistry->registerIcon(
                 $iconIdentifier,
-                'TYPO3\\CMS\\Core\\Imaging\\IconProvider\\BitmapIconProvider',
+                \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
                 array(
-                    'source' => 'EXT:' . IMAGECYLCE_EXT . '/' . $iconPath . $wizardConf['wizard_icon'],
+                    'source' => 'EXT:' . $extensionKey . '/' . $iconPath . $wizardConf['wizard_icon'],
                 )
             );
             $wizardItem['iconIdentifier'] = $iconIdentifier;

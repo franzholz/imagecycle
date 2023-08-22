@@ -26,6 +26,7 @@ namespace TYPO3Extension\Imagecycle\Backend;
  ***************************************************************/
 
 use TYPO3\CMS\Backend\Utility\BackendUtility;
+use TYPO3\CMS\Core\Configuration\ExtensionConfiguration;
 use TYPO3\CMS\Core\Messaging\FlashMessage;
 use TYPO3\CMS\Core\Messaging\FlashMessageQueue;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
@@ -41,14 +42,18 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
  */
 class ItemsProcFunc
 {
+    $extensionKey = 'imagecycle';
+
 	/**
 	 * Get defined Effects for dropdown
 	 * @return array
 	 */
 	public function getEffects($config, $item)
 	{
-		$confArr = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['imagecycle']);
-		$availableEffects = GeneralUtility::trimExplode(',', $confArr['effects'], true);
+        $extensionConfiguration = GeneralUtility::makeInstance(
+            ExtensionConfiguration::class
+        )->get($this->extensionKey);
+		$availableEffects = GeneralUtility::trimExplode(',', $extensionConfiguration['effects'], true);
 		if (count($availableEffects) < 1) {
 			$availableEffects = array('none','blindX','blindY','blindZ','cover','curtainX','curtainY','fade','fadeout','fadeZoom','growX','growY','scrollUp','scrollDown','scrollLeft','scrollRight','scrollHorz','scrollVert','shuffle','slideX','slideY','toss','turnUp','turnDown','turnLeft','turnRight','uncover','wipe','zoom','all');
 		}
@@ -84,8 +89,10 @@ class ItemsProcFunc
 	 */
 	public function getEffectsCoin($config, $item)
 	{
-		$confArr = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['imagecycle']);
-		$availableEffects = GeneralUtility::trimExplode(',', $confArr['effectsCoin'], true);
+        $extensionConfiguration = GeneralUtility::makeInstance(
+            ExtensionConfiguration::class
+        )->get($this->extensionKey);
+		$availableEffects = GeneralUtility::trimExplode(',', $extensionConfiguration['effectsCoin'], true);
 		if (count($availableEffects) < 1) {
 			$availableEffects = array('random','swirl','rain','straight');
 		}
@@ -121,8 +128,10 @@ class ItemsProcFunc
 	 */
 	public function getEffectsNivo($config, $item)
 	{
-		$confArr = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['imagecycle']);
-		$availableEffects = GeneralUtility::trimExplode(',', $confArr['effectsNivo'], true);
+        $extensionConfiguration = GeneralUtility::makeInstance(
+            ExtensionConfiguration::class
+        )->get($this->extensionKey);
+		$availableEffects = GeneralUtility::trimExplode(',', $extensionConfiguration['effectsNivo'], true);
 		if (count($availableEffects) < 1) {
 			$availableEffects = array('random','sliceDown','sliceDownLeft','sliceUp','sliceUpLeft','sliceUpDown','sliceUpDownLeft','fold','fade','slideInRight','slideInLeft', 'boxRandom', 'boxRain', 'boxRainReverse', 'boxRainGrow', 'boxRainGrowReverse');
 		}
@@ -159,11 +168,13 @@ class ItemsProcFunc
 	public function getThemesNivo($config, $item)
 	{
         $languageSubpath = '/Resources/Private/Language/';
-		$confArr = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['imagecycle']);
-		if (! is_dir(GeneralUtility::getFileAbsFileName($confArr['nivoThemeFolder']))) {
+        $extensionConfiguration = GeneralUtility::makeInstance(
+            ExtensionConfiguration::class
+        )->get($this->extensionKey);
+		if (! is_dir(GeneralUtility::getFileAbsFileName($extensionConfiguration['nivoThemeFolder']))) {
 			// if the defined folder does not exist, define the default folder
-			GeneralUtility::devLog('Path \''.$confArr['nivoThemeFolder'].'\' does not exist', 'imagecycle', 1);
-			$confArr['nivoThemeFolder'] = 'EXT:imagecycle/res/css/nivoslider/';
+			GeneralUtility::devLog('Path \''.$extensionConfiguration['nivoThemeFolder'].'\' does not exist', $this->extensionKey, 1);
+			$extensionConfiguration['nivoThemeFolder'] = 'EXT:' $this->extensionKey . '/res/css/nivoslider/';
 		}
 
 		// get the selected item
@@ -181,20 +192,20 @@ class ItemsProcFunc
 
 		// 
 		$info_text = null;
-		if (file_exists(GeneralUtility::getFileAbsFileName($confArr['nivoThemeFolder'] . $theme . '/readme.txt'))) {
-			$info_text = $GLOBALS['LANG']->sL(file_get_contents(GeneralUtility::getFileAbsFileName($confArr['nivoThemeFolder'] . $theme . '/readme.txt')));
+		if (file_exists(GeneralUtility::getFileAbsFileName($extensionConfiguration['nivoThemeFolder'] . $theme . '/readme.txt'))) {
+			$info_text = $GLOBALS['LANG']->sL(file_get_contents(GeneralUtility::getFileAbsFileName($extensionConfiguration['nivoThemeFolder'] . $theme . '/readme.txt')));
 			$queue = GeneralUtility::makeInstance(FlashMessageQueue::class);
-			$message = GeneralUtility::makeInstance(FlashMessage::class, $info_text, $GLOBALS['LANG']->sL('LLL:EXT:imagecycle' . $languageSubpath . 'locallang.xlf:pi3_theme_info'), FlashMessage::INFO);
+			$message = GeneralUtility::makeInstance(FlashMessage::class, $info_text, $GLOBALS['LANG']->sL('LLL:EXT:' . $this->extensionKey . $languageSubpath . 'locallang.xlf:pi3_theme_info'), FlashMessage::INFO);
 			$queue->addMessage($message);
 		}
 
-		$items = GeneralUtility::get_dirs(GeneralUtility::getFileAbsFileName($confArr['nivoThemeFolder']));
+		$items = GeneralUtility::get_dirs(GeneralUtility::getFileAbsFileName($extensionConfiguration['nivoThemeFolder']));
 		if (is_array($items) && count($items) > 0) {
 			$optionList = array();
 			foreach ($items as $key => $item) {
 				$item = trim($item);
 				if (! preg_match('/^\./', $item)) {
-					if (file_exists(GeneralUtility::getFileAbsFileName($confArr['nivoThemeFolder']) . $item . '/style.css')) {
+					if (file_exists(GeneralUtility::getFileAbsFileName($extensionConfiguration['nivoThemeFolder']) . $item . '/style.css')) {
 						$optionList[] = array(
 							$item,
 							$item,
@@ -217,20 +228,20 @@ class ItemsProcFunc
 	{
 		$optionList = array();
 		$optionList[] = array(
-			$GLOBALS['LANG']->sL('LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.mode.I.upload'),
+			$GLOBALS['LANG']->sL('LLL:EXT:' . $this->extensionKey . '/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.mode.I.upload'),
 			'upload',
-			'EXT:imagecycle/Resources/Public/Icons/mode_upload.gif'
+			'EXT:' . $this->extensionKey . '/Resources/Public/Icons/mode_upload.gif'
 		);
 		if ($config['config']['displayMode'] != 'page') {
 			$optionList[] = array(
-				$GLOBALS['LANG']->sL('LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.mode.I.rte'),
+				$GLOBALS['LANG']->sL('LLL:EXT:' . $this->extensionKey . '/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.mode.I.rte'),
 				'uploadRTE',
-				'EXT:imagecycle/Resources/Public/Icons/mode_rte.gif'
+				'EXT:' $this->extensionKey . '/Resources/Public/Icons/mode_rte.gif'
 			);
 			$optionList[] = array(
-				$GLOBALS['LANG']->sL('LLL:EXT:imagecycle/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.mode.I.data'),
+				$GLOBALS['LANG']->sL('LLL:EXT:' . $this->extensionKey . '/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.mode.I.data'),
 				'uploadData',
-				'EXT:imagecycle/Resources/Public/Icons/mode_data.gif'
+				'EXT:' . $this->extensionKey . '/Resources/Public/Icons/mode_data.gif'
 			);
 		}
 		if (isset($config['items']) && is_array($config['items'])) {

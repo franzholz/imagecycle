@@ -31,7 +31,6 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
  * Hint: use extdeveval to insert/update function index above.
  */
 
-require_once(ExtensionManagementUtility::extPath('imagecycle').'pi1/class.tx_imagecycle_pi1.php');
 
 /**
  * Plugin 'Cross-Slider' for the 'imagecycle' extension.
