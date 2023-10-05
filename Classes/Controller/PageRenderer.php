@@ -1,5 +1,5 @@
 <?php
-namespace TYPO3Extension\Imagecycle\Controller;
+namespace Typo3Extension\Imagecycle\Controller;
 
 /***************************************************************
  *  Copyright notice

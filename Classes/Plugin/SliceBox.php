@@ -21,7 +21,7 @@
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
-namespace TYPO3Extension\Imagecycle\Plugin;
+namespace Typo3Extension\Imagecycle\Plugin;
 
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 

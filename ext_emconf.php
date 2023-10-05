@@ -3,7 +3,7 @@ $EM_CONF[$_EXTKEY] = [
 	'title' => 'Image Cycle',
 	'description' => 'Insert a slideshow into your page or template. Manage the images, captions and hrefs recursively in the pagetree and show it in a jQuery-Cycle, Coin-Slider, Nivo-Slider or Cross-Slider.',
 	'category' => 'plugin',
-	'version' => '3.3.2',
+	'version' => '3.4.0',
 	'state' => 'stable',
 	'uploadfolder' => 0,
 	'clearcacheonload' => 1,
@@ -25,7 +25,7 @@ $EM_CONF[$_EXTKEY] = [
 	],
 	'autoload' => [
 		'psr-4' => [
-			'TYPO3Extension\\Imagecycle\\' => 'Classes',
+			'Typo3Extension\\Imagecycle\\' => 'Classes',
 		],
 	],
 ];

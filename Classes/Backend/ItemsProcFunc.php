@@ -1,6 +1,6 @@
 <?php
 
-namespace TYPO3Extension\Imagecycle\Backend;
+namespace Typo3Extension\Imagecycle\Backend;
 
 /***************************************************************
  *  Copyright notice

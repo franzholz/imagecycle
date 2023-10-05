@@ -25,7 +25,7 @@
 use TYPO3\CMS\Core\Configuration\ExtensionConfiguration;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
-use TYPO3Extension\Imagecycle\Controller\PageRenderer;
+use Typo3Extension\Imagecycle\Controller\PageRenderer;
 
 /**
  * [CLASS/FUNCTION INDEX of SCRIPT]

@@ -1,5 +1,5 @@
 <?php
-namespace TYPO3Extension\Imagecycle\Form\FormDataProvider;
+namespace Typo3Extension\Imagecycle\Form\FormDataProvider;
 
 /*
  * This file is part of the TYPO3 CMS project.
@@ -71,7 +71,11 @@ class SelectOrCheckboxField extends AbstractItemProvider implements FormDataProv
      */
     protected function useSelectInsteadCheckbox()
     {
-        $configuration = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['imagecycle']);
-        return (!empty($configuration['useSelectInsteadCheckbox']));
+        $extensionKey = 'imagecycle';
+        $extensionConfiguration = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
+            \TYPO3\CMS\Core\Configuration\ExtensionConfiguration::class
+        )->get($extensionKey);
+
+        return ($extensionConfiguration['useSelectInsteadCheckbox'] ?? false);
     }
 }

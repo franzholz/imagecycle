@@ -25,7 +25,7 @@ lib.imagecycle {
 	}
 	captionSplit = 1
 	renderMethod = ul
-	stdWrap.preUserFunc = TYPO3Extension\Imagecycle\Miscellaneous\TtNewsUserFunctions->getSlideshow
+	stdWrap.preUserFunc = Typo3Extension\Imagecycle\Miscellaneous\TtNewsUserFunctions->getSlideshow
 	cols >
 }
 tt_content.image.20 >

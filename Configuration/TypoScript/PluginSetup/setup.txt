@@ -1,6 +1,6 @@
 plugin.tx_imagecycle_pi1 = USER
 plugin.tx_imagecycle_pi1 {
-	userFunc = TYPO3Extension\Imagecycle\Plugin\ImageCycle->main
+	userFunc = Typo3Extension\Imagecycle\Plugin\ImageCycle->main
 
 	linkTarget = {$plugin.tx_imagecycle_pi1.linkTarget}
 	extlinkTarget = {$plugin.tx_imagecycle_pi1.extlinkTarget}
@@ -164,7 +164,7 @@ plugin.tx_imagecycle_pi1 {
 			}
 			stdWrap {
 				dataWrap = <div class="tx-imagecycle-pi1"><ul id="{register:key}" class="tx-imagecycle-pi1-images"> | </ul></div>
-				preUserFunc = TYPO3Extension\ImageCycle\Miscellaneous\TtNewsUserFunctions->getSlideshow
+				preUserFunc = Typo3Extension\ImageCycle\Miscellaneous\TtNewsUserFunctions->getSlideshow
 				preUserFunc.instanceClass = EXT:imagecycle/pi1/class.tx_imagecycle_pi1.php
 				preUserFunc.instance = tx_imagecycle_pi1
 				preUserFunc.type = ttnews

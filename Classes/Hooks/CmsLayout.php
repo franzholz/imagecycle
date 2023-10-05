@@ -1,6 +1,6 @@
 <?php
 
-namespace TYPO3Extension\Imagecycle\Hooks;
+namespace Typo3Extension\Imagecycle\Hooks;
 
 /***************************************************************
 *  Copyright notice

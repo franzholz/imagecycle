@@ -2,7 +2,10 @@
   "name": "typo3-extension/imagecycle",
   "type": "typo3-cms-extension",
   "description": "Insert a slideshow into your page or template. Manage the images, captions and hrefs recursively in the pagetree and show it in a jQuery-Cycle, Coin-Slider, Nivo-Slider or Cross-Slider.",
-
+  "support": {
+    "issues": "https://github.com/franzholz/imagecycle/issues"
+  },
+  "homepage": "https://jambage.com",
   "authors": [
     {
       "name": "Franz Holzinger",
@@ -33,7 +36,7 @@
   },
   "autoload": {
     "psr-4": {
-      "TYPO3Extension\\Imagecycle\\": "Classes"
+      "Typo3Extension\\Imagecycle\\": "Classes"
     }
   },
   "replace": {

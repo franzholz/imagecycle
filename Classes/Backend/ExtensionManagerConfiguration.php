@@ -1,6 +1,6 @@
 <?php
 
-namespace TYPO3Extension\Imagecycle\Backend;
+namespace Typo3Extension\Imagecycle\Backend;
 
 /***************************************************************
  *  Copyright notice
@@ -51,7 +51,7 @@ class ExtensionManagerConfiguration
 	*/
 	public function getThemesNivo(&$params, &$tsObj)
 	{
-		$itemsProcFunc = GeneralUtility::makeInstance(\TYPO3Extension\Imagecycle\Backend\ItemsProcFunc::class);
+		$itemsProcFunc = GeneralUtility::makeInstance(\Typo3Extension\Imagecycle\Backend\ItemsProcFunc::class);
 		$config = $itemsProcFunc->getThemesNivo(array('items'=> array()), array());
 		$items = $config['items'];
 

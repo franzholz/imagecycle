@@ -1,6 +1,6 @@
 [ext("tt_news")]
 plugin.tt_news {
-	imageMarkerFunc = TYPO3Extension\Imagecycle\Miscellaneous\TtNewsUserFunctions->getImageForTTnews
+	imageMarkerFunc = Typo3Extension\Imagecycle\Miscellaneous\TtNewsUserFunctions->getImageForTTnews
 
 	displaySingle {
 		imagecycleSingleImage < plugin.tx_imagecycle_pi3.nivo.ttnews.image

@@ -24,7 +24,7 @@
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
-namespace TYPO3Extension\Imagecycle\Miscellaneous;
+namespace Typo3Extension\Imagecycle\Miscellaneous;
 
 
 use tx_imagecycle_pi1;

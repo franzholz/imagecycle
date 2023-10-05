@@ -1,5 +1,5 @@
 <?php
-namespace TYPO3Extension\Imagecycle\Form\FormDataProvider;
+namespace Typo3Extension\Imagecycle\Form\FormDataProvider;
 
 /*
  * This file is part of the TYPO3 CMS project.
@@ -65,13 +65,11 @@ class AllowedGroupField extends AbstractItemProvider implements FormDataProvider
      */
     protected function getAllowedTypesForCaption()
     {
-        $allowedTypesForCaption = '';
+        $extensionKey = 'imagecycle';
+        $extensionConfiguration = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
+            \TYPO3\CMS\Core\Configuration\ExtensionConfiguration::class
+        )->get($extensionKey);
 
-        $configuration = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['imagecycle']);
-        if (!empty($configuration['allowedDbTypesForCaption'])) {
-            $allowedTypesForCaption = $configuration['allowedDbTypesForCaption'];
-        }
-
-        return $allowedTypesForCaption;
+        return ($extensionConfiguration['allowedDbTypesForCaption'] ?? false);
     }
 }
