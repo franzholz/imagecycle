@@ -11,13 +11,13 @@ call_user_func(function($extensionKey, $table)
     $tempColumns = array();
     $tempColumns['tx_imagecycle_mode'] = array(
         'exclude' => 1,
-        'label' => 'LLL:EXT:' $extensionKey . '/Resources/Private/Language/locallang_db.xlf:' . $table . '.tx_imagecycle_mode',
+        'label' => 'LLL:EXT:' . $extensionKey . '/Resources/Private/Language/locallang_db.xlf:' . $table . '.tx_imagecycle_mode',
         'config' => array(
             'type' => 'select',
             'items' => array (
                 array('LLL:EXT:' . $extensionKey . '/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.mode.I.recursiv', 'recursiv'),
             ),
-            'itemsProcFunc' => 'TYPO3Extension\Imagecycle\Backend\ItemsProcFunc->getModes',
+            'itemsProcFunc' => 'Typo3Extension\Imagecycle\Backend\ItemsProcFunc->getModes',
             'displayMode' => 'page',
             'size' => 1,
             'maxitems' => 1,
@@ -26,7 +26,7 @@ call_user_func(function($extensionKey, $table)
     // Normal page fields
     $tempColumns['tx_imagecycle_images'] = array(
         'exclude' => 1,
-        'label' => 'LLL:EXT:' $extensionKey . '/Resources/Private/Language/locallang_db.xlf:' . $table . '.tx_imagecycle_images',
+        'label' => 'LLL:EXT:' . $extensionKey . '/Resources/Private/Language/locallang_db.xlf:' . $table . '.tx_imagecycle_images',
         'displayCond' => 'FIELD:tx_imagecycle_mode:!IN:recursiv,,dam,dam_catedit',
         'config' => array(
             'type' => 'group',
@@ -70,7 +70,7 @@ call_user_func(function($extensionKey, $table)
             'items' => array(
                 array('LLL:EXT:' . $extensionKey . '/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.from_ts', ''),
             ),
-            'itemsProcFunc' => 'TYPO3Extension\Imagecycle\Backend\ItemsProcFunc->getEffects',
+            'itemsProcFunc' => 'Typo3Extension\Imagecycle\Backend\ItemsProcFunc->getEffects',
             'size' => 1,
             'maxitems' => 1,
         )
