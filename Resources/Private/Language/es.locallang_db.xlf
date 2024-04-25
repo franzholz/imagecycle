@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="messages" date="2023-08-21T11:05:52Z" product-name="imagecycle" target-language="es-ES">
+    <header/>
+    <body>
+      <trans-unit id="tx_dam.tx_jfdam_link" resname="tx_dam.tx_jfdam_link">
+        <source>Link</source>
+        <target state="needs-translation">Link</target>
+      </trans-unit>
+      <trans-unit id="pages.tx_imagecycle_div" resname="pages.tx_imagecycle_div">
+        <source>Image Cycle</source>
+        <target state="needs-translation">Image Cycle</target>
+      </trans-unit>
+      <trans-unit id="pages.tx_imagecycle_mode" resname="pages.tx_imagecycle_mode">
+        <source>Imagescycle mode</source>
+        <target state="needs-translation">Imagescycle mode</target>
+      </trans-unit>
+      <trans-unit id="pages.tx_imagecycle_damimages" resname="pages.tx_imagecycle_damimages">
+        <source>Images in DAM (dam)</source>
+        <target state="needs-translation">Images in DAM (dam)</target>
+      </trans-unit>
+      <trans-unit id="pages.tx_imagecycle_damcategories" resname="pages.tx_imagecycle_damcategories">
+        <source>Images from DAM category (dam_catedit)</source>
+        <target state="needs-translation">Images from DAM category (dam_catedit)</target>
+      </trans-unit>
+      <trans-unit id="pages.tx_imagecycle_images" resname="pages.tx_imagecycle_images">
+        <source>Images from Upload</source>
+        <target state="needs-translation">Images from Upload</target>
+      </trans-unit>
+      <trans-unit id="pages.tx_imagecycle_hrefs" resname="pages.tx_imagecycle_hrefs">
+        <source>Image links</source>
+        <target state="needs-translation">Image links</target>
+      </trans-unit>
+      <trans-unit id="pages.tx_imagecycle_captions" resname="pages.tx_imagecycle_captions">
+        <source>Image Captions</source>
+        <target state="needs-translation">Image Captions</target>
+      </trans-unit>
+      <trans-unit id="pages.tx_imagecycle_effect" resname="pages.tx_imagecycle_effect">
+        <source>Effect</source>
+        <target state="needs-translation">Effect</target>
+      </trans-unit>
+      <trans-unit id="pages.tx_imagecycle_stoprecursion" resname="pages.tx_imagecycle_stoprecursion">
+        <source>Stop Recursion (Reset)</source>
+        <target state="needs-translation">Stop Recursion (Reset)</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_imagecycle_title" resname="tt_content.tx_imagecycle_title">
+        <source>Image Cycle</source>
+        <target state="needs-translation">Image Cycle</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_imagecycle_activate" resname="tt_content.tx_imagecycle_activate">
+        <source>Activate</source>
+        <target state="needs-translation">Activate</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_imagecycle_duration" resname="tt_content.tx_imagecycle_duration">
+        <source>Duration in ms</source>
+        <target state="needs-translation">Duration in ms</target>
+      </trans-unit>
+      <trans-unit id="tt_content.list_type_pi1" resname="tt_content.list_type_pi1">
+        <source>Image cycle</source>
+        <target state="needs-translation">Image cycle</target>
+      </trans-unit>
+      <trans-unit id="tt_content.list_type_pi2" resname="tt_content.list_type_pi2">
+        <source>Coin-Slider</source>
+        <target state="needs-translation">Coin-Slider</target>
+      </trans-unit>
+      <trans-unit id="tt_content.list_type_pi3" resname="tt_content.list_type_pi3">
+        <source>Nivo-Slider</source>
+        <target state="needs-translation">Nivo-Slider</target>
+      </trans-unit>
+      <trans-unit id="tt_content.list_type_pi4" resname="tt_content.list_type_pi4">
+        <source>Cross-Slide</source>
+        <target state="needs-translation">Cross-Slide</target>
+      </trans-unit>
+      <trans-unit id="tt_content.list_type_pi5" resname="tt_content.list_type_pi5">
+        <source>Slice-Box</source>
+        <target state="needs-translation">Slice-Box</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.sheet_general" resname="tt_content.pi_flexform.sheet_general">
+        <source>General</source>
+        <target state="needs-translation">General</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.mode" resname="tt_content.pi_flexform.mode">
+        <source>Mode</source>
+        <target state="needs-translation">Mode</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.mode.I.recursiv" resname="tt_content.pi_flexform.mode.I.recursiv">
+        <source>Recursiv</source>
+        <target state="needs-translation">Recursiv</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.mode.I.upload" resname="tt_content.pi_flexform.mode.I.upload">
+        <source>Upload Images</source>
+        <target state="needs-translation">Upload Images</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.mode.I.folder" resname="tt_content.pi_flexform.mode.I.folder">
+        <source>Folder</source>
+        <target state="needs-translation">Folder</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.mode.I.rte" resname="tt_content.pi_flexform.mode.I.rte">
+        <source>Upload with RTE</source>
+        <target state="needs-translation">Upload with RTE</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.mode.I.data" resname="tt_content.pi_flexform.mode.I.data">
+        <source>Upload with data</source>
+        <target state="needs-translation">Upload with data</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.mode.I.dam" resname="tt_content.pi_flexform.mode.I.dam">
+        <source>DAM (dam)</source>
+        <target state="needs-translation">DAM (dam)</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.mode.I.dam_catedit" resname="tt_content.pi_flexform.mode.I.dam_catedit">
+        <source>DAM category (dam_catedit)</source>
+        <target state="needs-translation">DAM category (dam_catedit)</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.damimages" resname="tt_content.pi_flexform.damimages">
+        <source>Images in DAM (dam)</source>
+        <target state="needs-translation">Images in DAM (dam)</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.damcategories" resname="tt_content.pi_flexform.damcategories">
+        <source>Images from DAM category (dam_catedit)</source>
+        <target state="needs-translation">Images from DAM category (dam_catedit)</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.folder" resname="tt_content.pi_flexform.folder">
+        <source>Image folder</source>
+        <target state="needs-translation">Image folder</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.uploadRTE" resname="tt_content.pi_flexform.uploadRTE">
+        <source>Slide images</source>
+        <target state="needs-translation">Slide images</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.image" resname="tt_content.pi_flexform.image">
+        <source>Slide Image</source>
+        <target state="needs-translation">Slide Image</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.href" resname="tt_content.pi_flexform.href">
+        <source>Image link</source>
+        <target state="needs-translation">Image link</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.caption" resname="tt_content.pi_flexform.caption">
+        <source>Image Caption</source>
+        <target state="needs-translation">Image Caption</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.hide" resname="tt_content.pi_flexform.hide">
+        <source>Hide</source>
+        <target state="needs-translation">Hide</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.captionsData" resname="tt_content.pi_flexform.captionsData">
+        <source>Image Caption</source>
+        <target state="needs-translation">Image Caption</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.images" resname="tt_content.pi_flexform.images">
+        <source>Slide Images</source>
+        <target state="needs-translation">Slide Images</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.hrefs" resname="tt_content.pi_flexform.hrefs">
+        <source>Image links</source>
+        <target state="needs-translation">Image links</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.captions" resname="tt_content.pi_flexform.captions">
+        <source>Image Captions</source>
+        <target state="needs-translation">Image Captions</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.onlyFirstImage" resname="tt_content.pi_flexform.onlyFirstImage">
+        <source>First image only</source>
+        <target state="needs-translation">First image only</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.sheet_settings" resname="tt_content.pi_flexform.sheet_settings">
+        <source>Settings</source>
+        <target state="needs-translation">Settings</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.imagewidth" resname="tt_content.pi_flexform.imagewidth">
+        <source>Width</source>
+        <target state="needs-translation">Width</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.imageheight" resname="tt_content.pi_flexform.imageheight">
+        <source>Height</source>
+        <target state="needs-translation">Height</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.thumbwidth" resname="tt_content.pi_flexform.thumbwidth">
+        <source>Thumb width</source>
+        <target state="needs-translation">Thumb width</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.thumbheight" resname="tt_content.pi_flexform.thumbheight">
+        <source>Thumb height</source>
+        <target state="needs-translation">Thumb height</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.showcaption" resname="tt_content.pi_flexform.showcaption">
+        <source>Show caption</source>
+        <target state="needs-translation">Show caption</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.showControl" resname="tt_content.pi_flexform.showControl">
+        <source>Show Control</source>
+        <target state="needs-translation">Show Control</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.showPager" resname="tt_content.pi_flexform.showPager">
+        <source>Show Pager</source>
+        <target state="needs-translation">Show Pager</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.random" resname="tt_content.pi_flexform.random">
+        <source>Random order</source>
+        <target state="needs-translation">Random order</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.cleartypeNoBg" resname="tt_content.pi_flexform.cleartypeNoBg">
+        <source>Clear type no background</source>
+        <target state="needs-translation">Clear type no background</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.stoponmousover" resname="tt_content.pi_flexform.stoponmousover">
+        <source>Stop animation if mouse over</source>
+        <target state="needs-translation">Stop animation if mouse over</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.stopAfterOneCycle" resname="tt_content.pi_flexform.stopAfterOneCycle">
+        <source>Stop animation after one cycle</source>
+        <target state="needs-translation">Stop animation after one cycle</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.pausedBegin" resname="tt_content.pi_flexform.pausedBegin">
+        <source>Paused at beginning</source>
+        <target state="needs-translation">Paused at beginning</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.sheet_movement" resname="tt_content.pi_flexform.sheet_movement">
+        <source>Movement</source>
+        <target state="needs-translation">Movement</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.type" resname="tt_content.pi_flexform.type">
+        <source>Type of movement</source>
+        <target state="needs-translation">Type of movement</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.transition" resname="tt_content.pi_flexform.transition">
+        <source>Type of transition</source>
+        <target state="needs-translation">Type of transition</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.transitiondir" resname="tt_content.pi_flexform.transitiondir">
+        <source>Direction of transition</source>
+        <target state="needs-translation">Direction of transition</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.transitionduration" resname="tt_content.pi_flexform.transitionduration">
+        <source>Duration of transition (ms)</source>
+        <target state="needs-translation">Duration of transition (ms)</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.displayduration" resname="tt_content.pi_flexform.displayduration">
+        <source>Duration of display (ms)</source>
+        <target state="needs-translation">Duration of display (ms)</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.delayduration" resname="tt_content.pi_flexform.delayduration">
+        <source>Duration of delay (ms)</source>
+        <target state="needs-translation">Duration of delay (ms)</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.fastOnEvent" resname="tt_content.pi_flexform.fastOnEvent">
+        <source>Speed of transitions when triggered manually (ms)</source>
+        <target state="needs-translation">Speed of transitions when triggered manually (ms)</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.sync" resname="tt_content.pi_flexform.sync">
+        <source>Simultaneously animation</source>
+        <target state="needs-translation">Simultaneously animation</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.sheet_special" resname="tt_content.pi_flexform.sheet_special">
+        <source>Special</source>
+        <target state="needs-translation">Special</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.options" resname="tt_content.pi_flexform.options">
+        <source>Enter own options (see http://malsup.com/jquery/cycle/)</source>
+        <target state="needs-translation">Enter own options (see http://malsup.com/jquery/cycle/)</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.optionsOverride" resname="tt_content.pi_flexform.optionsOverride">
+        <source>Override all options</source>
+        <target state="needs-translation">Override all options</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.coinEffect" resname="tt_content.pi_flexform.coinEffect">
+        <source>Coin effect</source>
+        <target state="needs-translation">Coin effect</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.coinSpw" resname="tt_content.pi_flexform.coinSpw">
+        <source>Squares per width</source>
+        <target state="needs-translation">Squares per width</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.coinSph" resname="tt_content.pi_flexform.coinSph">
+        <source>Squares per height</source>
+        <target state="needs-translation">Squares per height</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.coinDelay" resname="tt_content.pi_flexform.coinDelay">
+        <source>Delay beetwen squares in ms</source>
+        <target state="needs-translation">Delay beetwen squares in ms</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.coinSDelay" resname="tt_content.pi_flexform.coinSDelay">
+        <source>Delay beetwen squares in ms</source>
+        <target state="needs-translation">Delay beetwen squares in ms</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.coinOpacity" resname="tt_content.pi_flexform.coinOpacity">
+        <source>Opacity of title and navigation</source>
+        <target state="needs-translation">Opacity of title and navigation</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.coinTitleSpeed" resname="tt_content.pi_flexform.coinTitleSpeed">
+        <source>Speed of title appereance in ms</source>
+        <target state="needs-translation">Speed of title appereance in ms</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.coinNavigation" resname="tt_content.pi_flexform.coinNavigation">
+        <source>Show navigation</source>
+        <target state="needs-translation">Show navigation</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.coinLinks" resname="tt_content.pi_flexform.coinLinks">
+        <source>Show images as links</source>
+        <target state="needs-translation">Show images as links</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.coinHoverPause" resname="tt_content.pi_flexform.coinHoverPause">
+        <source>Pause on hover</source>
+        <target state="needs-translation">Pause on hover</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.optionsCoin" resname="tt_content.pi_flexform.optionsCoin">
+        <source>Enter own options (see http://workshop.rs/projects/coin-slider/)</source>
+        <target state="needs-translation">Enter own options (see http://workshop.rs/projects/coin-slider/)</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.nivoEffect" resname="tt_content.pi_flexform.nivoEffect">
+        <source>Nivo effect</source>
+        <target state="needs-translation">Nivo effect</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.nivoSlices" resname="tt_content.pi_flexform.nivoSlices">
+        <source>Count of slices</source>
+        <target state="needs-translation">Count of slices</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.nivoBoxCols" resname="tt_content.pi_flexform.nivoBoxCols">
+        <source>Count of box cols</source>
+        <target state="needs-translation">Count of box cols</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.nivoBoxRows" resname="tt_content.pi_flexform.nivoBoxRows">
+        <source>Count of box rows</source>
+        <target state="needs-translation">Count of box rows</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.nivoAnimSpeed" resname="tt_content.pi_flexform.nivoAnimSpeed">
+        <source>Speed of the animation in ms</source>
+        <target state="needs-translation">Speed of the animation in ms</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.nivoPauseTime" resname="tt_content.pi_flexform.nivoPauseTime">
+        <source>Delay in ms</source>
+        <target state="needs-translation">Delay in ms</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.nivoStartSlide" resname="tt_content.pi_flexform.nivoStartSlide">
+        <source>Set starting Slide</source>
+        <target state="needs-translation">Set starting Slide</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.nivoStartRandom" resname="tt_content.pi_flexform.nivoStartRandom">
+        <source>Start Random</source>
+        <target state="needs-translation">Start Random</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.nivoTheme" resname="tt_content.pi_flexform.nivoTheme">
+        <source>Theme to use</source>
+        <target state="needs-translation">Theme to use</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.nivoDirectionNav" resname="tt_content.pi_flexform.nivoDirectionNav">
+        <source>Show navigation</source>
+        <target state="needs-translation">Show navigation</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.nivoDirectionNavHide" resname="tt_content.pi_flexform.nivoDirectionNavHide">
+        <source>Show navigation on hover</source>
+        <target state="needs-translation">Show navigation on hover</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.nivoControlNav" resname="tt_content.pi_flexform.nivoControlNav">
+        <source>Show control</source>
+        <target state="needs-translation">Show control</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.nivoControlNavThumbs" resname="tt_content.pi_flexform.nivoControlNavThumbs">
+        <source>Use thumb control</source>
+        <target state="needs-translation">Use thumb control</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.nivoKeyboardNav" resname="tt_content.pi_flexform.nivoKeyboardNav">
+        <source>Use left and right arrows for navigation</source>
+        <target state="needs-translation">Use left and right arrows for navigation</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.nivoPauseOnHover" resname="tt_content.pi_flexform.nivoPauseOnHover">
+        <source>Stop animation while hovering</source>
+        <target state="needs-translation">Stop animation while hovering</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.nivoManualAdvance" resname="tt_content.pi_flexform.nivoManualAdvance">
+        <source>Force manual transitions</source>
+        <target state="needs-translation">Force manual transitions</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.nivoResponsive" resname="tt_content.pi_flexform.nivoResponsive">
+        <source>Responsive</source>
+        <target state="needs-translation">Responsive</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.nivoCaptionOpacity" resname="tt_content.pi_flexform.nivoCaptionOpacity">
+        <source>Universal caption opacity</source>
+        <target state="needs-translation">Universal caption opacity</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.optionsNivo" resname="tt_content.pi_flexform.optionsNivo">
+        <source>Enter own options (see http://nivo.dev7studios.com/#usage)</source>
+        <target state="needs-translation">Enter own options (see http://nivo.dev7studios.com/#usage)</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.crossTransition" resname="tt_content.pi_flexform.crossTransition">
+        <source>Effect of transition</source>
+        <target state="needs-translation">Effect of transition</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.crossTransitionDir" resname="tt_content.pi_flexform.crossTransitionDir">
+        <source>Direction of transition</source>
+        <target state="needs-translation">Direction of transition</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.crossTime" resname="tt_content.pi_flexform.crossTime">
+        <source>The duration of the transition in milliseconds</source>
+        <target state="needs-translation">The duration of the transition in milliseconds</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.crossFade" resname="tt_content.pi_flexform.crossFade">
+        <source>The duration of the fade in milliseconds</source>
+        <target state="needs-translation">The duration of the fade in milliseconds</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.crossVariant" resname="tt_content.pi_flexform.crossVariant">
+        <source>Stop pad while fade</source>
+        <target state="needs-translation">Stop pad while fade</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.crossFromTo" resname="tt_content.pi_flexform.crossFromTo">
+        <source>Stack of effects to use (&quot;from | to&quot;, for example: &quot;100% 80% 1x | 100% 0% 1.7x&quot;)</source>
+        <target state="needs-translation">Stack of effects to use ("from | to", for example: "100% 80% 1x | 100% 0% 1.7x")</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.optionsCross" resname="tt_content.pi_flexform.optionsCross">
+        <source>Enter own options (see http://tobia.github.com/CrossSlide/)</source>
+        <target state="needs-translation">Enter own options (see http://tobia.github.com/CrossSlide/)</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.sliceColorHiddenSides" resname="tt_content.pi_flexform.sliceColorHiddenSides">
+        <source>Color of the hidden sides</source>
+        <target state="needs-translation">Color of the hidden sides</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.sliceShowInfo" resname="tt_content.pi_flexform.sliceShowInfo">
+        <source>Show info automatically</source>
+        <target state="needs-translation">Show info automatically</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.sliceOrientation" resname="tt_content.pi_flexform.sliceOrientation">
+        <source>Orientation</source>
+        <target state="needs-translation">Orientation</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.slicePerspective" resname="tt_content.pi_flexform.slicePerspective">
+        <source>Perspective</source>
+        <target state="needs-translation">Perspective</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.sliceSlicesCount" resname="tt_content.pi_flexform.sliceSlicesCount">
+        <source>Slices count</source>
+        <target state="needs-translation">Slices count</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.sliceDisperseFactor" resname="tt_content.pi_flexform.sliceDisperseFactor">
+        <source>Disperse factor</source>
+        <target state="needs-translation">Disperse factor</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.sliceSequentialRotation" resname="tt_content.pi_flexform.sliceSequentialRotation">
+        <source>Sequential rotation</source>
+        <target state="needs-translation">Sequential rotation</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.sliceSequentialFactor" resname="tt_content.pi_flexform.sliceSequentialFactor">
+        <source>Sequential factor</source>
+        <target state="needs-translation">Sequential factor</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.sliceSpeed3d" resname="tt_content.pi_flexform.sliceSpeed3d">
+        <source>3D Speed</source>
+        <target state="needs-translation">3D Speed</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.sliceSlideshow" resname="tt_content.pi_flexform.sliceSlideshow">
+        <source>Slideshow</source>
+        <target state="needs-translation">Slideshow</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.sliceSlideshowTime" resname="tt_content.pi_flexform.sliceSlideshowTime">
+        <source>Slideshow time</source>
+        <target state="needs-translation">Slideshow time</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.sliceEasing" resname="tt_content.pi_flexform.sliceEasing">
+        <source>Easing</source>
+        <target state="needs-translation">Easing</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.sheet_fallback" resname="tt_content.pi_flexform.sheet_fallback">
+        <source>Fallback</source>
+        <target state="needs-translation">Fallback</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.sliceSpeed" resname="tt_content.pi_flexform.sliceSpeed">
+        <source>Fallback speed</source>
+        <target state="needs-translation">Fallback speed</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.optionsSlice" resname="tt_content.pi_flexform.optionsSlice">
+        <source>Enter own options (see http://tympanus.net/codrops/2011/09/05/slicebox-3d-image-slider/)</source>
+        <target state="needs-translation">Enter own options (see http://tympanus.net/codrops/2011/09/05/slicebox-3d-image-slider/)</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.from_ts" resname="tt_content.pi_flexform.from_ts">
+        <source>From Typoscript</source>
+        <target state="needs-translation">From Typoscript</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.no" resname="tt_content.pi_flexform.no">
+        <source>No</source>
+        <target state="needs-translation">No</target>
+      </trans-unit>
+      <trans-unit id="tt_content.pi_flexform.yes" resname="tt_content.pi_flexform.yes">
+        <source>Yes</source>
+        <target state="needs-translation">Yes</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

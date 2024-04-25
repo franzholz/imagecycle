@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="messages" date="2023-08-21T11:06:18Z" product-name="imagecycle" target-language="ca">
+    <header/>
+    <body>
+      <trans-unit id="list" resname="list">
+        <source>list</source>
+        <target state="needs-translation">list</target>
+      </trans-unit>
+      <trans-unit id="prev" resname="prev">
+        <source>prev</source>
+        <target state="needs-translation">prev</target>
+      </trans-unit>
+      <trans-unit id="next" resname="next">
+        <source>next</source>
+        <target state="needs-translation">next</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
