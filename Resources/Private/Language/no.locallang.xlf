@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="messages" date="2023-08-21T11:05:43Z" product-name="imagecycle" target-language="no">
+    <header/>
+    <body>
+      <trans-unit id="pi1_title" resname="pi1_title">
+        <source>Image cycle</source>
+        <target state="needs-translation">Image cycle</target>
+      </trans-unit>
+      <trans-unit id="pi1_plus_wiz_description" resname="pi1_plus_wiz_description">
+        <source>Add an image cycle to your content</source>
+        <target state="needs-translation">Add an image cycle to your content</target>
+      </trans-unit>
+      <trans-unit id="pi2_title" resname="pi2_title">
+        <source>Coin-Slider</source>
+        <target state="needs-translation">Coin-Slider</target>
+      </trans-unit>
+      <trans-unit id="pi2_plus_wiz_description" resname="pi2_plus_wiz_description">
+        <source>Add a Coin-Slider to your content</source>
+        <target state="needs-translation">Add a Coin-Slider to your content</target>
+      </trans-unit>
+      <trans-unit id="pi3_title" resname="pi3_title">
+        <source>Nivo-Slider</source>
+        <target state="needs-translation">Nivo-Slider</target>
+      </trans-unit>
+      <trans-unit id="pi3_plus_wiz_description" resname="pi3_plus_wiz_description">
+        <source>Add a Nivo-Slider to your content</source>
+        <target state="needs-translation">Add a Nivo-Slider to your content</target>
+      </trans-unit>
+      <trans-unit id="pi3_theme_info" resname="pi3_theme_info">
+        <source>Theme information</source>
+        <target state="needs-translation">Theme information</target>
+      </trans-unit>
+      <trans-unit id="pi3_theme_orman" resname="pi3_theme_orman">
+        <source>Note: Images used in the slider for the Orman Theme should have the dimensions 568px x 268px</source>
+        <target state="needs-translation">Note: Images used in the slider for the Orman Theme should have the dimensions 568px x 268px</target>
+      </trans-unit>
+      <trans-unit id="pi3_theme_pascal" resname="pi3_theme_pascal">
+        <source>Note: Images used in the slider for the Pascal Theme should have the dimensions 630px x 235px and works best with 4 images</source>
+        <target state="needs-translation">Note: Images used in the slider for the Pascal Theme should have the dimensions 630px x 235px and works best with 4 images</target>
+      </trans-unit>
+      <trans-unit id="pi4_title" resname="pi4_title">
+        <source>Cross-Slider</source>
+        <target state="needs-translation">Cross-Slider</target>
+      </trans-unit>
+      <trans-unit id="pi4_plus_wiz_description" resname="pi4_plus_wiz_description">
+        <source>Add a Cross-Slider to your content</source>
+        <target state="needs-translation">Add a Cross-Slider to your content</target>
+      </trans-unit>
+      <trans-unit id="pi5_title" resname="pi5_title">
+        <source>Slice-Box</source>
+        <target state="needs-translation">Slice-Box</target>
+      </trans-unit>
+      <trans-unit id="pi5_plus_wiz_description" resname="pi5_plus_wiz_description">
+        <source>Add a Slice-Box to your content</source>
+        <target state="needs-translation">Add a Slice-Box to your content</target>
+      </trans-unit>
+      <trans-unit id="cms_layout.style" resname="cms_layout.style">
+        <source>Display: %s</source>
+        <target state="needs-translation">Display: %s</target>
+      </trans-unit>
+      <trans-unit id="cms_layout.not_configured" resname="cms_layout.not_configured">
+        <source>Plugin is not configured!</source>
+        <target state="needs-translation">Plugin is not configured!</target>
+      </trans-unit>
+      <trans-unit id="cms_layout.from_ts" resname="cms_layout.from_ts">
+        <source>From Typoscript</source>
+        <target state="needs-translation">From Typoscript</target>
+      </trans-unit>
+      <trans-unit id="extmng.classInnerHeader" resname="extmng.classInnerHeader">
+        <source>Warning!</source>
+        <target state="needs-translation">Warning!</target>
+      </trans-unit>
+      <trans-unit id="extmng.classInner" resname="extmng.classInner">
+        <source>You have to use the &quot;Update&quot;-Button below to ensure proper working for all functions in this extension.</source>
+        <target state="needs-translation">You have to use the "Update"-Button below to ensure proper working for all functions in this extension.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
